@@ -9,7 +9,7 @@
     <?php
     font(['lato','300,400']);
     art('#333','#ddd');
-    get_styles(['reset','inputs','shorts','docs']);
+    get_styles(['reset','bootstrap-grid','inputs','shorts','docs']);
     ?>
 </head>
 <body <?php body_class(); ?>>
