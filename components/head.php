@@ -12,7 +12,8 @@
     get_styles(['reset','inputs','shorts','docs']);
     ?>
 </head>
-<body <?php body_class(); ?>>
+<body id="teleport" <?php body_class(); ?>>
+<div class="migrate">
 <header>
     <div id="brand"></div>
     <nav id="prime">
