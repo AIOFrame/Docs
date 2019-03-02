@@ -10,8 +10,10 @@
             [ 'install', 'Installation' ],
             [ 'create', 'Create your First App' ],
             [ 'routes', 'Routes aka Pages' ],
+            [ 'functions', 'Functions' ],
+            [ 'components', 'Components' ],
+            [ 'assets', 'Assets (Styles, Scripts)' ],
             [ 'structure', 'Structure of App' ],
-            [ 'files', 'Structuring your Files' ],
             [ 'config', 'Configuration' ],
             [ 'defines', 'Defines' ],
             [ 'default', 'Defaults' ]

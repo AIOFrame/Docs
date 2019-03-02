@@ -106,6 +106,14 @@ article .define {
     color:darkslateblue;
     font-weight: normal;
 }
+article .app {
+    color:olivedrab;
+    font-weight: normal;
+}
+article .core {
+    color:#1CB5E0;
+    font-weight: normal;
+}
 .code {
     position: relative;
 }
@@ -133,4 +141,23 @@ article .define {
 }
 .code .copy:hover {
     opacity:1;
+}
+#links {
+    position:fixed;
+    top:70px;
+    right:20px;
+    background:#fff;
+    width:250px;
+    box-shadow:0 0 30px rgba(0,0,0,.1);
+    border-radius:6px;
+    padding:10px 0 10px;
+}
+#links:before {
+    content:'Quick Links';
+    font-weight: normal;
+}
+#links a, #links:before {
+    display: block;
+    padding:6px 20px;
+    font-size: 14px;
 }
