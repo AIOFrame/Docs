@@ -90,7 +90,14 @@ h1, h2, h3, h4, h5, h6 {
 /* Page Contents */
 
 article {
+    margin-top: 100px;
     padding: 20px;
+    opacity:0;
+    transition:1s;
+}
+article.on {
+    opacity:1;
+    margin-top: 0;
 }
 article>h1:nth-child(1) {
     margin-top: 0;
