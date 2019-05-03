@@ -1,5 +1,5 @@
 body {
-    margin: 50px 14vw 0;
+    margin: 50px 230px 0;
     font-family: 'Lato',sans-serif;
     font-weight: lighter;
 }
@@ -27,19 +27,22 @@ header nav ul li a {
 header+nav {
     position: fixed;
     left: 0;
-    width:14vw;
+    width:230px;
     top:50px;
     height:calc(100vh - 50px);
-    background:steelblue;
     color:#fff;
     box-shadow:0 0 20px rgba(0,0,0,.1);
     overflow-y:auto;
     padding:10px 0;
     box-sizing: border-box;
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 header+nav>ul {
     padding:10px 0;
-    border-radius:5px;
+    border-radius:10px;
     margin: 0 10px;
 }
 header+nav>ul.on {
@@ -71,17 +74,20 @@ header+nav>ul>li>a.on {
 /*}*/
 header+nav>ul>li>ul>li>a {
     font-size: 15px;
-    padding:5px 15px 5px 30px;
+    padding:5px 15px;
+}
+header+nav>ul>li>ul>li>a:after {
+    content: '';
+    width: 0;
+    height: 1px;
+    vertical-align: middle;
+    margin-left: 15px;
+    background: #fff;
+    display: inline-block;
+    transition:.6s;
 }
 header+nav>ul>li>ul>li>a.on:after {
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    top: calc(50% - 1px);
-    left: 15px;
-    background: rgba(255,255,255,.5);
-    border-radius: 5px;
+    width:20px;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 15px 0;
@@ -90,14 +96,29 @@ h1, h2, h3, h4, h5, h6 {
 /* Page Contents */
 
 article {
-    margin-top: 100px;
     padding: 20px;
     opacity:0;
     transition:1s;
 }
+.loader {
+    position: fixed;
+    top:50px;
+    height:2px;
+    left: 230px;
+    width:calc(100% - 230px);
+}
+.loader i {
+    background:deepskyblue;
+    opacity:.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height:2px;
+    width:0;
+    transition:.6s;
+}
 article.on {
     opacity:1;
-    margin-top: 0;
 }
 article>h1:nth-child(1) {
     margin-top: 0;

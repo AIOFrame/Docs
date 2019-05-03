@@ -12,8 +12,7 @@
     get_styles(['reset','bootstrap-grid','inputs','shorts','docs']);
     ?>
 </head>
-<body id="teleport" <?php body_class(); ?>>
-<div class="migrate">
+<body <?php body_class(); ?>>
 <header>
     <div id="brand"></div>
     <nav id="prime">
@@ -29,3 +28,6 @@
     </nav>
 </header>
 <?php get_comp('nav'); ?>
+<div class="loader on"><i></i></div>
+<div id="port">
+    <div class="dynamic">

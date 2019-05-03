@@ -1,13 +1,13 @@
 <?php get_comp('head'); ?>
 <article>
-    <h1>Structure of our <span class="core">APP</span></h1>
+    <h1>Structure of AIO</h1>
     <?php
     /* $structure = [
         'coreapp' => [ 'apps' => [ '' ] ],
     ]; */
     ?>
 <div class="row" style="font-size: calc(.6vw + .6vh);">
-    <div class="col-3">
+    <div class="col-4">
 <h3>Directory Structure</h3>
 <pre class="lh15">
 coreapp/
@@ -39,12 +39,12 @@ coreapp/
 └─ README.md
 </pre>
     </div>
-    <div class="col-3">
+    <div class="col-4">
 <h3>Directory Functionality</h3>
 <pre class="lh15">
 Domain Root
-Application Host
-<span class="app">Your APP Root
+Application Host (Place your apps here)
+<span class="app">Sample APP Root
 
 Scripts Root
 
@@ -59,27 +59,7 @@ Functions Root
 </span>
 </pre>
     </div>
-    <div class="col-3">
-<h3>Description</h3>
-<pre class="lh15">
-
-Place your apps here
-
-<span class="app">
-Place scripts here
-
-
-Place styles here
-
-
-Place HTML & PHP Components
-
-
-Place functions
-    </span>
-</pre>
-    </div>
-    <div class="col-3">
+    <div class="col-4">
     <h3>Related Function</h3>
 <pre class="lh15">
 

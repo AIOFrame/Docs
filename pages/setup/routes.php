@@ -2,8 +2,8 @@
 <article>
     <h1 id="pages">Pages, <small>also known as</small> Routes</h1>
     <h3 id="static">Static Pages</h3>
-    <p>We made it very easy to create pages and route them via url in our NIDA App, that you do not have to configure anything</p>
-    <p>Previously we created a directory inside NIDA App, which is your app root.</p>
+    <p>We made it very easy to create pages and route them via url in our AIO, that you do not have to configure anything</p>
+    <p>Previously we created a directory inside AIO, which is your app root.</p>
     <p>You can create a directory named 'pages' inside your <span class="app">APP</span> which will serve your pages (routes)</p>
     <p>Any PHP file created inside pages directory can automatically be visited from your website just by adding name to your url</p>
     <p class="mb60">Similarly you can create directories inside pages and create PHP files inside and visit them, refer to following examples</p>

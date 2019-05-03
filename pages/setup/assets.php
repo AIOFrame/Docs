@@ -4,8 +4,8 @@
     <h3 id="intro">Script or Style files</h3>
     <p>You can create styles directory inside your <span class="app">APP</span> and place all your css files</p>
     <p>Similarly you can place all your .js files inside scripts directory</p>
-    <p>NIDA App has in built functions that lets your easily get these files and render them as &#60;link> or &#60;script></p>
-    <p class="mb60">NIDA App also detects minified CSS and JS files, if present will link to minified file instead</p>
+    <p>AIO has in built functions that lets your easily get these files and render them as &#60;link> or &#60;script></p>
+    <p class="mb60">AIO also detects minified CSS and JS files, if present will link to minified file instead</p>
 
     <h3 id="script">Get Script File</h3>
     <p>To get a script you can simple use get_script('') with file name as parameter</p>

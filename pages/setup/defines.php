@@ -1,7 +1,7 @@
 <?php get_comp('head'); ?>
 <article>
     <h1 class="mb30">Defined Variables and their outputs</h1>
-    <p class="mb30">Along the way app being initiated, few following defines are added automatically</p>
+    <p class="mb30">Along the way AIO is initiated, following defines are added automatically</p>
     <div class="row mb30">
         <div class="col-6"><div class="define mb15">COREPATH</div>Ex: /users/root/www/application</div>
         <div class="col-6">Main Application Server ROOT Directory Path<br/>(Generated automatically based on pointed root folder)</div>

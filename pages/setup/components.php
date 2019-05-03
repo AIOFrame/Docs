@@ -19,11 +19,11 @@
         </thead>
         <tbody>
         <tr>
-            <td>coreapp / apps / delivery / components / header.php</td>
+            <td>aio / apps / delivery / components / header.php</td>
             <td><pre>get_comp('header');</pre></td>
         </tr>
         <tr>
-            <td>coreapp / apps / university / components / admin / sidebar.php</td>
+            <td>aio / apps / university / components / admin / sidebar.php</td>
             <td><pre>get_comp('admin/sidebar');</pre></td>
         </tr>
         </tbody>
