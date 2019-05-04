@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Documentation v1.0</title>
     <?php
-    font(['lato','300,400']);
+    fonts([['lato','300,400'],['SourceCodePro','Regular']]);
     art('#333','#ddd');
     get_styles(['reset','bootstrap-grid','inputs','shorts','docs']);
     ?>

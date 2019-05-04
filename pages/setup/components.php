@@ -1,6 +1,6 @@
 <?php get_comp('head'); ?>
 <article>
-    <h1>Components</h1>
+    <h1 class="mb30">Components</h1>
     <p>If you have some HTML or PHP code that you have to use in multiple pages</p>
     <p>You can place it as PHP file inside 'components' directory under your <span class="app">APP</span></p>
     <p>You can easily get the component by using a function</p>

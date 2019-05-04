@@ -152,6 +152,10 @@ article .core {
     font-size: 16px;
     margin-bottom: 15px;
     background:#eee;
+    font-family: 'Source Code Pro',monospace;
+}
+pre {
+    font-family: 'Source Code Pro',monospace;
 }
 .code .copy {
     position: absolute;

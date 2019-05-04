@@ -1,6 +1,6 @@
 <?php get_comp('head'); ?>
 <article>
-    <h1 id="pages">Pages, <small>also known as</small> Routes</h1>
+    <h1 id="pages" class="mb30">Pages, <small>Routes</small></h1>
     <h3 id="static">Static Pages</h3>
     <p>We made it very easy to create pages and route them via url in our AIO, that you do not have to configure anything</p>
     <p>Previously we created a directory inside AIO, which is your app root.</p>

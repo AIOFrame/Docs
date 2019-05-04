@@ -16,7 +16,7 @@
             [ 'structure', 'Structure of AIO' ],
             [ 'config', 'Configuration' ],
             [ 'defines', 'Defines' ],
-            [ 'default', 'Defaults' ]
+            [ 'database', 'Database' ]
         ] ],
         [ 'front', 'Frontend', [
             [ 'intro', 'Introduction' ],

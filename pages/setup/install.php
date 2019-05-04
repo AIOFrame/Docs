@@ -1,6 +1,6 @@
 <?php get_comp('head'); ?>
 <article>
-    <h1>Install AIO</h1>
+    <h1 class="mb30">Install AIO</h1>
     <p>Installing AIO is very easy. All you have to do is git clone our project and start working on it. Every now and then you can run git pull for updates.</p>
     <div class="code">
         <pre>git clone https://github.com/AIOFrame/AIO.git</pre>

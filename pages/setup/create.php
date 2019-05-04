@@ -1,6 +1,6 @@
 <?php get_comp('head'); ?>
 <article>
-    <h1 id="create" class="mb60">Creating your First Application</h1>
+    <h1 id="create" class="mb30">Creating your First Application</h1>
     <p>All you need to do is create a directory inside <span class="define">COREPATH</span>/apps/</p>
     <p>If your domain is wifipro.com, <b>wifipro</b> could be your directory inside apps (Irrespective of domain TLD)</p>
     <p>Ex: <span class="define">COREPATH</span>/apps/wifipro</p>
@@ -12,14 +12,14 @@
     <p>Ex: <span class="define">APPPATH</span> = <span class="define">COREPATH</span>/apps/wifipro</p>
     <div class="mb60"></div>
 
-    <h3 id="multiple">Multiple Apps</h3>
+    <h1 id="multiple" class="mb30">Multiple Apps</h1>
     <img src="<?php echo APPURL.'apps/'.APPNAME.'/assets/images/multi_app.svg'; ?>" height="250px">
     <p>AIO supports multiple apps and your app will be automatically your domain / subdomain name</p>
     <p>You can create multiple apps inside AIO and work on all of them at once</p>
     <p>You can map multiple domains to same App or you can configure single domain to multiple apps</p>
     <div class="mb60"></div>
 
-    <h3 id="auto">Domain to App (Automatic Detection)</h3>
+    <h1 id="auto" class="mb30">Domain to App (Automatic Detection)</h1>
     <p>AIO automatically detects your domain or subdomain and looks for app with same name inside <span class="define">COREPATH</span>/apps</p>
     <p>Refer to following example how you can name your app to be automatically detected</p>
     <img src="<?php echo APPURL.'apps/'.APPNAME.'/assets/images/multi_app2.svg'; ?>" height="250px">
