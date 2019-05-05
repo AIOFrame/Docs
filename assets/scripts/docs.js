@@ -52,5 +52,6 @@ var FadeTransition = Barba.BaseTransition.extend({
         restore_scroll();
         store_scroll();
         active_nav();
+        $('#menu,#doc_menu').removeClass('on');
     }
 });
