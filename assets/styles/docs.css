@@ -1,7 +1,11 @@
 body {
-    margin: 50px 230px 0;
+    margin: 50px 0 0 230px;
     font-family: 'Lato',sans-serif;
     font-weight: lighter;
+}
+body.dark {
+    background:rgb(10,10,10);
+    color:#fff;
 }
 header {
     background:#fff;
@@ -13,6 +17,16 @@ header {
     z-index:100;
     height:50px;
     display: flex;
+}
+body.dark header {
+    background:rgb(20,20,20);
+}
+#brand {
+    width:230px;
+    background:url('../images/logob.svg') no-repeat center / 90px;
+}
+body.dark #brand {
+    background:url('../images/logow.svg') no-repeat center / 90px;
 }
 header nav ul {
     display: flex;
@@ -35,9 +49,15 @@ header+nav {
     overflow-y:auto;
     padding:10px 0;
     box-sizing: border-box;
-    background: #36D1DC;
-    background: -webkit-linear-gradient(to bottom, #5B86E5, #36D1DC);
-    background: linear-gradient(to bottom, #5B86E5, #36D1DC);
+    background: #36a7dc;
+    background: -webkit-linear-gradient(to bottom, #5B86E5, #36a7dc);
+    background: linear-gradient(to bottom, #5B86E5, #36a7dc);
+    transition:.6s;
+}
+body.dark header+nav {
+    background: #001119;
+    background: -webkit-linear-gradient(to bottom,#0c1730,#001119);
+    background: linear-gradient(to bottom,#0c1730,#001119);
 }
 header+nav>ul {
     padding:10px 0;
@@ -45,8 +65,11 @@ header+nav>ul {
     margin: 0 10px;
     transition:.6s;
 }
-header+nav>ul.on {
+header+nav>ul.on, header+nav>ul>li>a.on {
     background:rgba(255,255,255,.1);
+}
+body.dark header+nav>ul.on, body.dark header+nav>ul>li>a.on {
+    background:rgba(255,255,255,.02);
 }
 header+nav a {
     display: block;
@@ -63,9 +86,6 @@ header+nav>ul>li>a {
     margin: 2px 10px 6px;
     border-radius: 5px;
 }
-header+nav>ul>li>a.on {
-    background:rgba(255,255,255,.1)
-}
 /*header+nav>ul>li>ul {*/
     /*padding:0 0 20px;*/
 /*}*/
@@ -74,14 +94,18 @@ header+nav>ul>li>a.on {
 /*}*/
 header+nav>ul>li>ul>li>a {
     font-size: 15px;
-    padding:5px 15px;
+    padding:5px 25px;
+    display: inline-block;
+    position: relative;
 }
 header+nav>ul>li>ul>li>a:after {
     content: '';
+    position: absolute;
+    left:calc(100% - 10px);
+    top:50%;
     width: 0;
     height: 1px;
     vertical-align: middle;
-    margin-left: 15px;
     background: #fff;
     display: inline-block;
     transition:.6s;
@@ -92,6 +116,25 @@ header+nav>ul>li>ul>li>a.on:after {
 h1, h2, h3, h4, h5, h6 {
     margin: 15px 0;
 }
+.search {
+    padding:5px 10px 0;
+}
+.search input {
+    font-family: 'Lato',sans-serif;
+    border-radius: 6px;
+    padding: 10px 20px;
+    border: 0;
+    background:rgba(255,255,255,.1);
+    margin-bottom: 10px;
+    font-weight: lighter;
+    color:#fff;
+}
+.search input::placeholder {
+    color:#ddd;
+}
+body.dark .search input {
+    background: rgba(255,255,255,.02);
+}
 
 /* Page Contents */
 
@@ -99,6 +142,9 @@ article {
     padding: 20px;
     opacity:0;
     transition:1s;
+}
+article>h1 {
+    margin-bottom: 30px;
 }
 .loader {
     position: fixed;
@@ -145,14 +191,28 @@ article .core {
 .code {
     position: relative;
 }
-.code pre {
-    padding:15px;
+pre {
     border:1px solid #ddd;
     border-radius:5px;
     font-size: 16px;
-    margin-bottom: 15px;
     background:#eee;
     font-family: 'Source Code Pro',monospace;
+    word-break: break-word;
+    white-space: normal;
+    padding:2px 4px;
+}
+table td pre, body.dark table td pre {
+    padding: 0;
+    background:none;
+    border:0;
+}
+.code pre {
+    margin-bottom: 15px;
+    padding:15px;
+}
+body.dark pre {
+    background:rgb(20,20,20);
+    border:1px solid rgb(35,35,35);
 }
 pre {
     font-family: 'Source Code Pro',monospace;
@@ -184,6 +244,9 @@ pre {
     border-radius:6px;
     padding:10px 0 10px;
 }
+body.dark #links {
+    background:rgb(20,20,20);
+}
 #links:before {
     content:'Quick Links';
     font-weight: normal;
@@ -193,7 +256,54 @@ pre {
     padding:6px 20px;
     font-size: 14px;
 }
+body.dark table thead tr {
+    background:rgb(15,15,15);
+}
+body.dark table tbody {
+    background:rgb(10,10,10);
+}
+body.dark table tr {
+    border-top:1px solid rgb(20,20,20);
+    border-bottom:1px solid rgb(20,20,20);
+}
+td .copy {
+    display: inline-block;
+    vertical-align: top;
+    padding: 4px 8px;
+    background: rgba(0,0,0,.4);
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+table.micro td {
+    width:50%;
+}
 
+/* Notification */
+
+body.dark #notification {
+    background:rgb(30,30,30);
+}
+#notification {
+    left: auto;
+    right: 15px;
+    transform:none;
+    padding: 15px 50px 15px 15px;
+    min-width:200px;
+}
+#notification div {
+    font-size: 16px;
+}
+#notification .close {
+    right: 4px;
+    top: 4px;
+    width: 25px;
+    height: 25px;
+}
 ::-webkit-scrollbar {
     width:6px;
 }

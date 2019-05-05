@@ -9,12 +9,16 @@
     <?php
     fonts([['lato','300,400'],['SourceCodePro','Regular']]);
     art('#333','#ddd');
-    get_styles(['reset','bootstrap-grid','inputs','shorts','docs']);
+    favicon('aio');
+    get_styles(['reset','bootstrap-grid','inputs','micro','docs']);
+    is_mobile() ? get_style('fluid') : '';
     ?>
 </head>
 <body <?php body_class(); ?>>
 <header>
-    <div id="brand"></div>
+    <?php echo is_mobile() ? '<div id="menu" data-on="#menu,#doc_menu"></div>' : ''; ?>
+    <a href="<?php echo APPURL; ?>" id="brand"></a>
+    <?php echo is_mobile() ? '<div id="more" data-on="#more,#prime"></div>' : ''; ?>
     <nav id="prime">
         <ul>
             <li><a href="<?php echo APPURL; ?>">App</a></li>

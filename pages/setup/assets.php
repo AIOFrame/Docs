@@ -2,7 +2,8 @@
 <article>
     <h1 class="mb30">Assets</h1>
     <h3 id="intro">Script or Style files</h3>
-    <p>Assets lets you easily link to your styles or scripts. Simply add a dir 'assets' inside your <span class="app">APP</span> and add 'styles' and 'scripts' dirs inside it.</p>
+    <p>Assets lets you easily link to your styles or scripts.</p>
+    <p>Simply add a dir 'assets' inside your <span class="app">APP</span> and add 'styles' and 'scripts' dirs inside it.</p>
     <p>Place your styles in styles dir and scripts in scripts dir.</p>
     <p>AIO has in built functions that lets your easily get these files and render them as &#60;link> or &#60;script></p>
     <p class="mb60">AIO also detects minified CSS and JS files, if present will link to minified file instead</p>

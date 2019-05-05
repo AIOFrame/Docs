@@ -1,9 +1,8 @@
 <nav id="doc_menu" data-save-scroll>
+    <div class="search"><input type="text" placeholder="Search Documentation..."></div>
     <?php $secondary_menu = [
         [ 'intro', 'Introduction', [
             [ 'idea', 'The Idea' ],
-            [ 'effort', 'Effort' ],
-            [ 'future', 'Future' ],
             [ 'features', 'Features' ],
         ] ],
         [ 'setup', 'Setup', [
@@ -71,6 +70,10 @@
                 [ 'spreadsheet', 'Spreadsheet' ],
             ] ]
         ] ],
+        [ 'aio', 'Ahead', [
+            [ 'future', 'Future of AIO' ],
+            [ 'credits', 'Credits' ],
+        ] ]
     ];
     foreach( $secondary_menu as $m ) {
         $mc = isset( $_GET['a'] ) && $_GET['a'] == $m[0] ? 'class="on"' : '';
