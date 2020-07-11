@@ -10,6 +10,16 @@ $(document).ready(function(){
     };
 
     $('article').addClass('on');
+    var d = localStorage.getItem( 'dark' );
+    if( d === '1' ) {
+        $('body').addClass('d');
+    }
+
+    $('.dark').on('click',function(){
+        $('body').toggleClass('d');
+        d = $('body').hasClass('d') ? "1" : "0";
+        localStorage.setItem( 'dark', d );
+    });
 
 });
 

@@ -1,5 +1,4 @@
 <nav id="doc_menu" data-save-scroll>
-    <div class="search"><input type="text" placeholder="Search Documentation..."></div>
     <?php $secondary_menu = [
         [ 'intro', 'Introduction', [
             [ 'idea', 'The Idea' ],

@@ -5,33 +5,32 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Documentation v1.0</title>
+    <title>Documentation v1.5</title>
     <?php
+    reset_styles( 'Lato,SourceCodePro', '300', 5 );
     fonts([['lato','300,400'],['SourceCodePro','Regular']]);
     art('#333','#ddd');
     favicon('aio');
-    get_styles(['reset','bootstrap-grid','inputs','micro','docs']);
+    get_styles(['bootstrap-grid','inputs','micro','docs']);
     is_mobile() ? get_style('fluid') : '';
     ?>
 </head>
 <body <?php body_class(); ?>>
 <header>
     <?php echo is_mobile() ? '<div id="menu" data-on="#menu,#doc_menu"></div>' : ''; ?>
-    <a href="<?php echo APPURL; ?>" id="brand"></a>
+    <div><a href="<?php echo APPURL; ?>" id="brand"></a></div>
     <?php echo is_mobile() ? '<div id="more" data-on="#more,#prime"></div>' : ''; ?>
-    <nav id="prime">
-        <ul>
-            <li><a href="<?php echo APPURL; ?>">App</a></li>
-            <li><a href="<?php echo APPURL; ?>features">Features</a></li>
-            <li><a href="<?php echo APPURL; ?>docs">Docs</a></li>
-            <li><a href="<?php echo APPURL; ?>github">Github</a></li>
-            <li><a href="<?php echo APPURL; ?>issues">Issues</a></li>
-            <li><a href="<?php echo APPURL; ?>support">Support</a></li>
-            <li><a href="<?php echo APPURL; ?>contact">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="search">
+        <input type="text" placeholder="Search Documentation...">
+    </div>
+    <div>
+        <div class="ico lang"></div>
+        <div class="ico dark"></div>
+    </div>
 </header>
-<?php get_comp('nav'); ?>
+<aside>
+    <?php get_comp('nav'); ?>
+</aside>
 <div class="loader on"><i></i></div>
 <div id="port">
     <div class="dynamic">
