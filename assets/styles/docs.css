@@ -67,7 +67,7 @@ aside nav > ul {
   transition: 0.6s;
   list-style: none;
 }
-aside nav > ul > li > a {
+aside nav > ul > li > div {
   padding: 10px 0;
   font-size: calc(.8vw + .8vh);
   font-weight: lighter;
@@ -76,9 +76,14 @@ aside nav > ul > li > a {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #00A99D;
+  cursor: pointer;
+  background: url("../icons/up.svg") no-repeat calc(100% - 10px) center/30px;
 }
 aside nav > ul > li > ul {
   list-style: none;
+  height: 0;
+  overflow: hidden;
+  transition: 0.6s;
 }
 aside nav > ul > li > ul > li > a {
   font-size: calc(.7vw + .7vh);
@@ -101,6 +106,12 @@ aside nav > ul > li > ul > li a:after {
 aside nav > ul > li > ul > li a.on:after {
   width: 20px;
 }
+aside nav > ul.on div {
+  background: url("../icons/down.svg") no-repeat calc(100% - 10px) center/30px;
+}
+aside nav > ul.on ul {
+  height: auto;
+}
 aside nav a {
   display: block;
   position: relative;
@@ -108,6 +119,10 @@ aside nav a {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 15px 0;
+}
+
+ol {
+  margin-left: 25px;
 }
 
 .search {
@@ -141,7 +156,7 @@ article > h1:nth-child(1) {
   letter-spacing: 2px;
 }
 
-p {
+p, ol li {
   margin-bottom: 15px;
   font-size: calc(.8vw + .8vh);
   line-height: calc(1.8vw + 1.8vh);
@@ -152,7 +167,7 @@ h3 {
 }
 
 .define {
-  color: darkslateblue;
+  color: #00A99D;
   font-weight: normal;
 }
 
@@ -201,6 +216,26 @@ pre {
   word-break: break-word;
   white-space: normal;
   padding: 2px 4px;
+}
+
+table {
+  border-spacing: 0;
+  border-radius: 4px;
+}
+table thead {
+  color: #00A99D;
+}
+table thead td {
+  border: 1px solid #00A99D;
+}
+table thead td:not(:last-child) {
+  border-right: 0;
+}
+table td {
+  padding: 0 10px;
+}
+table td p {
+  margin: 0;
 }
 
 table td pre {
@@ -311,7 +346,6 @@ table.micro td {
 /* DARK MODE */
 body.d {
   background: #0a0a0a;
-  color: #fff;
 }
 body.d ::-webkit-scrollbar {
   background: none;
@@ -325,15 +359,24 @@ body.d header .dark {
 body.d header .lang {
   background: url("../icons/langw.svg") no-repeat center/30px;
 }
+body.d article {
+  color: #ddd;
+}
 body.d aside {
   background: #141414;
+}
+body.d nav a {
+  color: #fff;
 }
 body.d #brand {
   background: url("../images/logow.svg") no-repeat center/80px;
 }
 body.d .search input {
   color: #fff;
-  background: rgba(255, 255, 255, 0.03) url("../icons/searchw.svg") no-repeat calc(100% - 15px) center/25px;
+  background: rgba(0, 0, 0, 0.3) url("../icons/searchw.svg") no-repeat calc(100% - 15px) center/25px;
+}
+body.d aside nav > ul > li > ul > li a:after {
+  background: #fff;
 }
 body.d pre {
   background: #141414;
@@ -341,6 +384,9 @@ body.d pre {
 }
 body.d #links {
   background: #141414;
+}
+body.d .code .copy {
+  background: black;
 }
 body.d table thead tr {
   background: #0f0f0f;
@@ -358,6 +404,18 @@ body.d #notify {
 }
 body.d #notify .close {
   background: url("../icons/closew.svg") no-repeat center/contain;
+}
+
+@media only screen and (min-width: 2000px) {
+  p, pre, ol li {
+    margin-bottom: 15px;
+    font-size: calc(.6vw + .6vh);
+    line-height: calc(1.3vw + 1.3vh);
+  }
+
+  aside nav > ul > li > ul > li > a {
+    font-size: calc(.6vw + .6vh);
+  }
 }
 
 /*# sourceMappingURL=docs.css.map */

@@ -1,75 +1,78 @@
 <?php get_comp('head'); ?>
 <article>
-    <h1 id="create" class="mb30">Creating your First Application</h1>
-    <p>All you need to do is create a directory inside <span class="define">COREPATH</span>/apps/</p>
-    <p>If your domain is wifipro.com, <b>wifipro</b> could be your directory inside apps (Irrespective of domain TLD)</p>
-    <p>Ex: <span class="define">COREPATH</span>/apps/wifipro</p>
-    <p>If you are visiting from subdomain like admin.wifipro.com, <b>admin</b> will be your app automatically (You can manually map too)</p>
-    <p>Ex: <span class="define">COREPATH</span>/apps/admin</p>
-    <p>This way, AIO will serve you multiple apps based on the domain you are visiting from.</p>
-    <p>From now everytime we refer to your <span class="app">APP</span>, we will highlight it in green</p>
-    <p>During development you can refer to your <span class="app">APP</span> directory by using pre defined var <span class="define">APPPATH</span></p>
-    <p>Ex: <span class="define">APPPATH</span> = <span class="define">COREPATH</span>/apps/wifipro</p>
+
+    <h1 class="mb30"><?php E('Setup Wizard'); ?></h1>
+    <p><?php E('The setup wizard will run once you visit your domain, after your have pointed your domain to root of AIO'); ?></p>
+    <p><?php E('You can choose Fonts, Styles & Scripts, even setup pages and sub pages during setup'); ?></p>
     <div class="mb60"></div>
 
-    <h1 id="multiple" class="mb30">Multiple Apps</h1>
-    <img src="<?php echo APPURL.'apps/'.APPNAME.'/assets/images/multi_app.svg'; ?>" height="250px">
-    <p>AIO supports multiple apps and your app will be automatically your domain / subdomain name</p>
-    <p>You can create multiple apps inside AIO and work on all of them at once</p>
-    <p>You can map multiple domains to same App or you can configure single domain to multiple apps</p>
+    <h1 class="mb30"><?php E('MANUAL SETUP'); ?></h1>
+    <p><?php E('You need to create a directory inside'); ?> <span class="define">COREPATH</span>/apps/ <?php E('with the same name as your domain / sub domain'); ?></p>
+    <p><?php E('If your domain is instafood.com, your directory should be "instafood"'); ?></p>
+    <p>Ex: <span class="define">COREPATH</span>/apps/instafood</p>
+    <p><?php E('AIO will serve you multiple web apps based on the domain you are visiting from'); ?></p>
     <div class="mb60"></div>
 
-    <h1 id="auto" class="mb30">Domain to App (Automatic Detection)</h1>
-    <p>AIO automatically detects your domain or subdomain and looks for app with same name inside <span class="define">COREPATH</span>/apps</p>
-    <p>Refer to following example how you can name your app to be automatically detected</p>
-    <img src="<?php echo APPURL.'apps/'.APPNAME.'/assets/images/multi_app2.svg'; ?>" height="250px">
-    <p class="mt20">Refer to the following table for few more examples</p>
-    <table class="mb15 tac">
-        <thead>
-        <tr>
-            <td>Example Domain</td>
-            <td>Automatic App Directory*</td>
-            <td>Comments</td>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>company.com</td>
-            <td>company</td>
-            <td>same result on any domain tld (.in,.net,.io...)</td>
-        </tr>
-        <tr>
-            <td>company.uk</td>
-            <td>company</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>alphabeta.io</td>
-            <td>alphabeta</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>admin.project.com</td>
-            <td>admin</td>
-            <td>on subdomains it becomes sub name</td>
-        </tr>
-        <tr>
-            <td>docs.wifiproject.com</td>
-            <td>docs</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>admin.wifiproject.com</td>
-            <td>admin</td>
-            <td></td>
-        </tr>
-        </tbody>
-    </table>
-    <p>Automatic App Directory: Means you can create a folder with that name and domain will automatically browse to your app's pages</p>
-</article>
-    <div id="links">
-        <a href="#create">Creating your First Application</a>
-        <a href="#multiple">Multiple Apps</a>
-        <a href="#auto">Domain to App (Automatic Detection)</a>
+    <p><?php E('Tip: You can use your app root in your development as a defined variable'); ?> <span class="define">APPPATH</span></p>
+    <p><span class="define">APPPATH</span> = <span class="define">COREPATH</span>/apps/instafood</p>
+
+    <div class="dn">
+        <h1 id="multiple" class="mb30">Multiple Apps</h1>
+        <img src="<?php echo APPURL.'apps/'.APPNAME.'/assets/images/multi_app.svg'; ?>" height="250px">
+        <p>AIO supports multiple apps and your app will be automatically your domain / subdomain name</p>
+        <p>You can create multiple apps inside AIO and work on all of them at once</p>
+        <p>You can map multiple domains to same App or you can configure single domain to multiple apps</p>
+        <div class="mb60"></div>
     </div>
+
+    <div class="dn">
+        <h1 id="auto" class="mb30">Domain to App (Automatic Detection)</h1>
+        <p>AIO automatically detects your domain or subdomain and looks for app with same name inside <span class="define">COREPATH</span>/apps</p>
+        <p>Refer to following example how you can name your app to be automatically detected</p>
+        <img src="<?php echo APPURL.'apps/'.APPNAME.'/assets/images/multi_app2.svg'; ?>" height="250px">
+        <p class="mt20">Refer to the following table for few more examples</p>
+        <table class="mb15 tac">
+            <thead>
+            <tr>
+                <td>Example Domain</td>
+                <td>Automatic App Directory*</td>
+                <td>Comments</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>company.com</td>
+                <td>company</td>
+                <td>same result on any domain tld (.in,.net,.io...)</td>
+            </tr>
+            <tr>
+                <td>company.uk</td>
+                <td>company</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>alphabeta.io</td>
+                <td>alphabeta</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>admin.project.com</td>
+                <td>admin</td>
+                <td>on subdomains it becomes sub name</td>
+            </tr>
+            <tr>
+                <td>docs.wifiproject.com</td>
+                <td>docs</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>admin.wifiproject.com</td>
+                <td>admin</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+        <p>Automatic App Directory: Means you can create a folder with that name and domain will automatically browse to your app's pages</p>
+    </div>
+</article>
 <?php get_comp('foot');

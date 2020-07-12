@@ -1,54 +1,53 @@
 <?php get_comp('head'); ?>
 <article>
-    <h1 id="pages" class="mb30">Pages, <small>Routes</small></h1>
-    <h3 id="static">Static Pages</h3>
-    <p>We made it very easy to create pages and route them via url in our AIO, that you do not have to configure anything</p>
-    <p>Previously we created a directory inside AIO, which is your app root.</p>
-    <p>You can create a directory named 'pages' inside your <span class="app">APP</span> which will serve your pages (routes)</p>
-    <p>Any PHP file created inside pages directory can automatically be visited from your website just by adding name to your url</p>
-    <p class="mb60">Similarly you can create directories inside pages and create PHP files inside and visit them, refer to following examples</p>
-    <h3 id="static_ex">Example Static Page Routing</h3>
-    <table class="mb60">
+    <h1 id="static"><?php E('STATIC PAGES'); ?></h1>
+    <p><?php E('Create a directory named \'pages\' inside your web app'); ?>
+    <p><?php E('Any php file created inside \'pages\', becomes a page'); ?></p>
+    <p>Ex: http://instafood.com/about = root/apps/instafood/pages/about.php</p>
+    <p><?php E('You can also create directories inside pages and create PHP files inside, refer to following examples'); ?></p>
+    <p><?php E('Tip: If a page doesn\'t exist AIO will render the index.php from previous directory'); ?></p>
+    <table>
         <thead>
         <tr>
-            <td>Example URL</td>
-            <td>File Location</td>
+            <td><p><?php E('Example URL'); ?></p></td>
+            <td><p><?php E('File Location'); ?></p></td>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td>www.delivery.com/about</td>
-            <td>coreapp / apps / delivery / about.php</td>
+            <td><p>www.delivery.com/about</p></td>
+            <td><p>root / apps / delivery / about.php</p></td>
         </tr>
         <tr>
-            <td>www.delivery.com/reports/sales</td>
-            <td>coreapp / apps / delivery / reports / sales.php</td>
+            <td><p>www.delivery.com/reports/sales</p></td>
+            <td><p>root / apps / delivery / reports / sales.php</p></td>
         </tr>
         <tr>
-            <td>www.games.com/arcade/pacman</td>
-            <td>coreapp / apps / games / arcade / pacman.php</td>
+            <td><p>www.delivery.com/reports/sales</p></td>
+            <td><p>root / apps / delivery / reports / sales / index.php</p></td>
         </tr>
         <tr>
-            <td>www.homebazar.com/action/drone</td>
-            <td>coreapp / apps / homebazar / action / drone.php</td>
+            <td><p>www.games.com/arcade/pacman</p></td>
+            <td><p>root / apps / games / arcade / pacman.php</p></td>
         </tr>
         </tbody>
     </table>
-    <h3 id="dynamic">Dynamic Pages</h3>
-    <p>If you are developing your app that has dynamic pages, the app will load its previous page if page doesn't exist</p>
-    <p>And you can call the dynamic parameter as $_GET value with specific alphabet based on its position in url</p>
-    <p>For instance, lets say your url is www.university.com/training/courses/programming/swift</p>
+    <div class="mb60"></div>
+    <h1 id="dynamic"><?php E('DYNAMIC PAGES'); ?></h1>
+    <p><?php E('Dynamic page doesn\'t exist as a file, its loaded programmatically'); ?></p>
+    <p><?php E('You can call the dynamic parameter as $_GET value with specific alphabet based on its position in url'); ?></p>
+    <p><?php E('For instance, lets say your url is'); ?> www.university.com/training/courses/programming/swift</p>
     <table class="mb15">
         <tbody>
         <tr>
-            <td>www.university.com</td>
-            <td>training</td>
-            <td>courses</td>
-            <td>programming</td>
-            <td>swift</td>
+            <td><p>www.university.com</p></td>
+            <td><p>courses</p></td>
+            <td><p>courses</p></td>
+            <td><p>programming</p></td>
+            <td><p>swift</p></td>
         </tr>
         <tr>
-            <td>APPURL</td>
+            <td><p>APPURL</p></td>
             <td><pre>$_GET['a']</pre></td>
             <td><pre>$_GET['b']</pre></td>
             <td><pre>$_GET['c']</pre></td>
@@ -56,31 +55,26 @@
         </tr>
         </tbody>
     </table>
-    <p>So if swift.php exists inside training/courses/programming/ then it will be loaded or else the app will load programming.php inside training/courses/</p>
-    <p>And you can use $_GET['d'] inside your programming.php file and keep changing the url dynamically</p>
-    <p class="mb60">Please refer to following examples</p>
-    <h3 id="dynamic_ex">Example Dynamic Page Routing</h3>
+    <p><?php E('Ex: If swift.php exists inside training/courses/programming/ then it will be loaded or else the app will load programming.php inside training/courses/'); ?></p>
+    <p><?php E('You can use $_GET[\'d\'] inside your programming.php file and keep changing the url dynamically'); ?></p>
     <table class="mb30">
         <thead>
         <tr>
-            <td>Example URL</td>
-            <td>Static Location</td>
-            <td>Dynamic Location (When static doesn't exist)</td>
-            <td>Dynamic Variable</td>
+            <td><p><?php E('Example URL'); ?></p></td>
+            <td><p><?php E('Dynamic Location (When physical file doesn\'t exist)'); ?></p></td>
+            <td><p><?php E('Variable'); ?></p></td>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td>www.university.com/exam/1154</td>
-            <td>coreapp / apps / university / exam / 1154.php</td>
-            <td>coreapp / apps / university / exam.php</td>
-            <td><pre class="dib">$_GET['b']</pre> = 1154</td>
+            <td><p>www.university.com/student/66215</p></td>
+            <td><p>root / apps / university / student.php</p></td>
+            <td><p><pre class="dib">$_GET['b']</pre> = 66215</p></td>
         </tr>
         <tr>
-            <td>www.store.com/action/drones/dji-spark</td>
-            <td>coreapp / apps / store / action / drones / dji-spark.php</td>
-            <td>coreapp / apps / store / action / drones.php</td>
-            <td><pre class="dib">$_GET['c']</pre> = dji-spark</td>
+            <td><p>www.store.com/action/drones/dji-spark</p></td>
+            <td><p>coreapp / apps / store / action / drones.php</p></td>
+            <td><p><pre class="dib">$_GET['c']</pre> = dji-spark</p></td>
         </tr>
         </tbody>
     </table>

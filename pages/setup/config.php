@@ -76,7 +76,7 @@
     </table>
     <h3 id="sample">Sample config.php</h3>
     <div class="code">
-<pre class="lh15">&#60;?php
+<pre class="lh15"><?php pre("<?php
 return [
     'name' => 'Delivery App',
     'slug' => 'da',
@@ -87,7 +87,7 @@ return [
     'key' => 'Awesome',
     'debug' => false,
     'ssl' => true
-];</pre>
+]; ?>"); ?></pre>
     <div class="copy" data-clipboard-text="return [
     'name' => 'Delivery App',
     'slug' => 'da',

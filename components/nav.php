@@ -1,16 +1,14 @@
 <nav id="doc_menu" data-save-scroll>
     <?php $secondary_menu = [
-        [ 'intro', 'Introduction', [
-            [ 'idea', 'The Idea' ],
-            [ 'features', 'Features' ],
-        ] ],
         [ 'setup', 'Setup', [
-            [ 'install', 'Install AIO' ],
+            [ 'pre', 'Prerequisites' ],
+            [ 'start', 'Get Started' ],
             [ 'create', 'Create your First App' ],
-            [ 'routes', 'Routes aka Pages' ],
-            [ 'functions', 'Functions' ],
+            [ 'routes', 'Pages / Routing' ],
+            [ 'functions', 'Custom Functions' ],
             [ 'components', 'Components' ],
             [ 'assets', 'Assets (Styles, Scripts)' ],
+            [ 'multiple', 'Multiple Apps' ],
             [ 'structure', 'Structure of AIO' ],
             [ 'config', 'Configuration' ],
             [ 'defines', 'Defines' ],
@@ -76,10 +74,10 @@
     ];
     foreach( $secondary_menu as $m ) {
         $mc = isset( $_GET['a'] ) && $_GET['a'] == $m[0] ? 'class="on"' : '';
-        echo '<ul '.$mc.'><li><a href="'.APPURL.$m[0].'" '.$mc.'>'.$m[1].'</a><ul>';
+        echo '<ul id="'.strtolower($m[1]).'" '.$mc.'><li><div data-on="#'.strtolower($m[1]).'">'.T($m[1]).'</div><ul>';
         foreach( $m[2] as $sm ) {
             $msc = isset( $_GET['b'] ) && ($_GET['b'] == $sm[0]) && ($_GET['a'] == $m[0]) ? 'class="on"' : '';
-            echo '<li><a href="'.APPURL.$m[0].'/'.$sm[0].'" '.$msc.'>'.$sm[1].'</a>';
+            echo '<li><a href="'.APPURL.$m[0].'/'.$sm[0].'" '.$msc.'>'.T($sm[1]).'</a>';
             echo '</li>';
 
             /* if( !file_exists( APPPATH . 'pages/'. $m[0] . '/' . $sm[0] . '.php' ) ) {
