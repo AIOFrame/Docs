@@ -1,9 +1,8 @@
 <?php get_comp('head'); ?>
 <article>
-    <h1 class="mb30">Functions</h1>
-    <p>You can write all your functions in php files placed under functions directory in your <span class="app">APP</span></p>
-    <p>All your php files under functions folder will be alphabetically included before your page loads</p>
-    <p>For instance, lets say you have products.php and stores.php in functions directory that contains your functions</p>
-    <p>They both along with any other php file from functions directory will be included before your page is loaded</p>
+    <h1 class="mb30"><?php E('CUSTOM FUNCTIONS'); ?></h1>
+    <p><?php E('Create a directory "functions" inside your'); ?> <span class="app">APPPATH</span></p>
+    <p class="mb60"><?php E('All php files placed under "functions" folder will be loaded alphabetically by default'); ?></p>
+    <p><?php E('You can change the order, include or exclude loading of function files thru config'); ?></p>
 </article>
 <?php get_comp('foot');

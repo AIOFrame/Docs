@@ -38,7 +38,7 @@
     <p><?php E('You can call the dynamic parameter as $_GET value with specific alphabet based on its position in url'); ?></p>
     <p><?php E('For instance, lets say your url is'); ?> www.university.com/training/courses/programming/swift</p>
     <table class="mb15">
-        <tbody>
+        <thead>
         <tr>
             <td><p>www.university.com</p></td>
             <td><p>courses</p></td>
@@ -46,6 +46,8 @@
             <td><p>programming</p></td>
             <td><p>swift</p></td>
         </tr>
+        </thead>
+        <tbody>
         <tr>
             <td><p>APPURL</p></td>
             <td><pre>$_GET['a']</pre></td>
