@@ -1,6 +1,6 @@
 <?php get_comp('head'); ?>
 <article>
-    <h1 class="mb30">Defined Variables and their outputs</h1>
+    <h1 class="mb30"><?php E('Defined Variables'); ?></h1>
     <p class="mb30">Along the way AIO is initiated, following defines are added automatically</p>
     <div class="row mb30">
         <div class="col-6"><div class="define mb15">COREPATH</div>Ex: /users/root/www/application</div>
