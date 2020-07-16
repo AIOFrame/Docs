@@ -7,14 +7,71 @@
     <div class="mb60"></div>
 
     <h1 class="mb30"><?php E('MANUAL SETUP'); ?></h1>
-    <p><?php E('You need to create a directory inside'); ?> <span class="define">COREPATH</span>/apps/ <?php E('with the same name as your domain / sub domain'); ?></p>
-    <p><?php E('If your domain is instafood.com, your directory should be "instafood"'); ?></p>
-    <p>Ex: <span class="define">COREPATH</span>/apps/instafood</p>
-    <p><?php E('AIO will serve you multiple web apps based on the domain you are visiting from'); ?></p>
+
+    <div class="code">
+        <pre class="lh15 mb30">
+root / <small><?php E('AIO, Domain Root'); ?></small>
+├─ apps
+│  <span class="app">├─ instafood</span> <small><?php E('1 Create your APP directory'); ?></small>
+│  <span class="app">│  ├─ assets</span> <small><?php E('2 Create your assets directory'); ?></small>
+│  <span class="app">│  │  ├─ scripts</span> <small><?php E('2.1 Create scripts dir, place your scripts here'); ?></small>
+│  <span class="app">│  │  └─ styles</span> <small><?php E('2.2 Create styles dir, place your styles here'); ?></small>
+│  <span class="app">│  ├─ components</span> <small><?php E('3. Create components dir, place html and php components here'); ?></small>
+│  <span class="app">│  ├─ functions</span> <small><?php E('4. Create functions dir, place your function files here'); ?></small>
+│  <span class="app">│  └─ pages</span> <small><?php E('5. Create pages dir, place your pages here'); ?></small>
+│  <span class="app">└──── config.php</span> <small><?php E('6. Create config.php file, configure your app'); ?></small>
+├─ assets
+├─ core
+└─ index.php
+</pre>
+    </div>
+
+    <p><?php E('1. You need to create a directory inside'); ?> <span class="define">COREPATH</span>/apps/ <?php E('with the same name as your domain / sub domain'); ?></p>
+    <p class="ml20"><?php E('Ex: instafood.com app dir should be "instafood", crm.instafood.com app dir should be "crm"'); ?></p>
+    <p class="ml20"><?php E('AIO will serve you multiple web apps based on the domain you are visiting from'); ?></p>
+    <p><?php E('2. Create a directory named "assets"'); ?></p>
+    <p class="ml20"><?php E('2.1 Create a directory "scripts" inside "assets" and place all your js files in it'); ?></p>
+    <div class="ml30">
+        <div class="code ml20">
+            <pre><?php pre('<?php get_script("jquery"); ?>'); ?></pre>
+            <div class="copy" data-clipboard-text="get_script();"><?php E('COPY'); ?></div>
+        </div>
+        <p class="ml20"><?php E('will get you script that you have placed here, links to .min.js if available'); ?></p>
+        <div class="code ml20">
+            <pre><?php pre('<?php get_scripts(["jquery","form-validation","add_contact"]); ?>'); ?></pre>
+            <div class="copy" data-clipboard-text="get_scripts([]);"><?php E('COPY'); ?></div>
+        </div>
+        <p class="ml20"><?php E('You can also link multiple scripts if needed, duplicated will be automatically be removed'); ?></p>
+    </div>
+    <p class="ml20"><?php E('2.2 Create a directory "styles" inside "assets" and place all your scss, css files in it'); ?></p>
+    <div class="ml30">
+        <div class="code ml20">
+            <pre><?php pre('<?php get_style("bootstrap"); ?>'); ?></pre>
+            <div class="copy" data-clipboard-text="get_style();"><?php E('COPY'); ?></div>
+        </div>
+        <p class="ml20"><?php E('will get you style that you have placed here, links to .min.css if available'); ?></p>
+        <div class="code ml20">
+            <pre><?php pre('<?php get_styles(["bootstrap","form-inputs","style"]); ?>'); ?></pre>
+            <div class="copy" data-clipboard-text="get_styles([]);"><?php E('COPY'); ?></div>
+        </div>
+        <p class="ml20"><?php E('You can also link multiple styles if needed, duplicated will be automatically be removed'); ?></p>
+    </div>
+    <p><?php E('3. Create a directory named "components"'); ?></p>
+    <p class="ml20"><?php E('Place your html, php files in this dir and you can use them anywhere in your APP by using'); ?></p>
+    <div class="code ml20">
+        <pre><?php pre('<?php get_comp("header"); ?>'); ?></pre>
+        <div class="copy" data-clipboard-text="get_comp();"><?php E('COPY'); ?></div>
+    </div>
+    <p><?php E('4. Create a directory named "functions"'); ?></p>
+    <p class="ml20"><?php E('Place your functions organized in php files in this dir and they will be automatically included in your APP'); ?></p>
+    <p class="ml20"><?php E('Tip: You can configure the order of files included by configuring in config.php'); ?></p>
+    <p><?php E('5. Create a directory named "pages"'); ?></p>
+    <p class="ml20"><?php E('Place all your pages structured in folders, AIO will open them prettified by visiting your domain/pagename'); ?></p>
+    <p class="ml20"><?php E('Ex 1: instafood.com/foods will open foods.php in "pages" dir'); ?></p>
+    <p class="ml20"><?php E('Ex 2: instafood.com/users/login will open login.php inside "pages/users" dir'); ?></p>
+
     <div class="mb60"></div>
 
-    <p><?php E('Tip: You can use your app root in your development as a defined variable'); ?> <span class="define">APPPATH</span></p>
-    <p><span class="define">APPPATH</span> = <span class="define">COREPATH</span>/apps/instafood</p>
 
     <div class="dn">
         <h1 id="multiple" class="mb30">Multiple Apps</h1>

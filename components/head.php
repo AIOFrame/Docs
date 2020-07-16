@@ -24,8 +24,8 @@
         <input type="text" placeholder="Search Documentation...">
     </div>
     <div>
-        <div class="ico lang"></div>
-        <div class="ico dark"></div>
+        <div class="icon lang"></div>
+        <div class="icon dark"></div>
     </div>
 </header>
 <aside>
