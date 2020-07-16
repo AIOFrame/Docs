@@ -1,27 +1,27 @@
 <?php get_comp('head'); ?>
 <article>
-    <h1>Micro CSS</h1>
-    <p>Micro CSS lets you add css styling class directly to the element in the micro form</p>
-    <div class="mb15">Lets say you have to add <pre class="dib">text align:right;</pre> to a specific element, you can just add <pre class="dib">tar</pre> to its class</div>
-    <p>Micro CSS covers almost all css styling you need in the smallest form possible</p>
-    <div>In another example, you need to hide an element. Just use <pre class="dib">dn</pre> class which is same as <pre class="dib">display:none;</pre></div>
+    <h1><?php E('Micro CSS'); ?></h1>
+    <p><?php E('Micro CSS lets you style the element directly by writing micro class'); ?></p>
+    <div><p class="dib"><?php E('Instead of styling'); ?></p> <pre class="dib">text align:right;</pre> <p class="dib"><?php E('to an element, you can just add class'); ?></p> <pre class="dib">tar</pre></div>
+    <p><?php E('Micro CSS covers almost all css styling you need in the smallest shortcode possible'); ?></p>
     <div class="mb60"></div>
-    <h2>Use Micro CSS:</h2>
+    <h1><?php E('LINK MICRO CSS'); ?></h1>
     <p></p>
     <div class="code">
         <pre>get_style('micro');</pre>
+        <div class="copy" data-clipboard-text="get_style('micro');"><?php E('COPY'); ?></div>
+    </div>
+    <div class="code">
         <pre>get_styles(['your_other_style','micro']);</pre>
+        <div class="copy" data-clipboard-text="get_styles(['micro']);"><?php E('COPY'); ?></div>
     </div>
     <div class="mb60"></div>
-    <h2>Documentation:</h2>
-    <p>Please refer to the following micro classes to add respective equivalent CSS</p>
-    <div class="mb30"></div>
-    <h3>Element Position</h3>
+    <h3><?php E('REFERENCE'); ?></h3>
     <table class="micro">
         <thead>
         <tr>
-            <td>Micro Class</td>
-            <td>Styling</td>
+            <td><p><?php E('MICRO CLASS'); ?></p></td>
+            <td><p><?php E('EQUIVALENT STYLE'); ?></p></td>
         </tr>
         </thead>
         <tbody>
