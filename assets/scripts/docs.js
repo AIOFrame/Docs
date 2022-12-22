@@ -32,11 +32,9 @@ $(document).ready(function(){
 });
 
 function active_nav() {
-
     $('#doc_menu ul,#doc_menu a').removeClass('on');
     let am = $('#doc_menu a[href="'+location.href+'"]');
     am.addClass('on').parents('ul').addClass('on').prev('a').addClass('on');
-
 }
 
 let FadeTransition = Barba.BaseTransition.extend({
@@ -51,8 +49,8 @@ let FadeTransition = Barba.BaseTransition.extend({
         return $(this.oldContainer).animate({ opacity: 0 }).promise();
     },
     fadeIn: function() {
-        var _this = this;
-        var $el = $(this.newContainer);
+        let _this = this;
+        let $el = $(this.newContainer);
         $(this.oldContainer).hide();
         $el.find('article').addClass('on');
         $('.loader i').css({ width:'100%' });
@@ -67,8 +65,8 @@ let FadeTransition = Barba.BaseTransition.extend({
             $('.loader').css({ opacity:'0' });
             $('.loader i').css({ width:'0' });
         });
-        restore_scroll();
-        store_scroll();
+        //restore_scroll();
+        //store_scroll();
         active_nav();
         $('#menu,#doc_menu').removeClass('on');
     }
