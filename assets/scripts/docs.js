@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    let b = $('body');
+
     Barba.Pjax.Dom.wrapperId = 'port';
     Barba.Pjax.Dom.containerClass = 'dynamic';
 
@@ -10,28 +12,34 @@ $(document).ready(function(){
     };
 
     $('article').addClass('on');
-    var d = localStorage.getItem( 'dark' );
+    let d = localStorage.getItem( 'dark' );
     if( d === '1' ) {
-        $('body').addClass('d');
+        $(b).addClass('d');
     }
 
-    $('.dark').on('click',function(){
-        $('body').toggleClass('d');
-        d = $('body').hasClass('d') ? "1" : "0";
+    $(b)
+
+    .on('click','.dark',function(){
+        $(b).toggleClass('d');
+        d = $(b).hasClass('d') ? "1" : "0";
         localStorage.setItem( 'dark', d );
-    });
+    })
+
+    .on('click','#doc_menu ul>li>div', function () {
+        $(this).parents('ul').toggleClass('on');
+    })
 
 });
 
 function active_nav() {
 
     $('#doc_menu ul,#doc_menu a').removeClass('on');
-    var am = $('#doc_menu a[href="'+location.href+'"]');
+    let am = $('#doc_menu a[href="'+location.href+'"]');
     am.addClass('on').parents('ul').addClass('on').prev('a').addClass('on');
 
 }
 
-var FadeTransition = Barba.BaseTransition.extend({
+let FadeTransition = Barba.BaseTransition.extend({
     start: function() {
         Promise
             .all([this.newContainerLoading, this.fadeOut()])

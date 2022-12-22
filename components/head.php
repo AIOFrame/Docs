@@ -1,21 +1,9 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Documentation v1.5</title>
-    <?php
-    reset_styles( 'Lato,SourceCodePro', '300', 5 );
-    fonts([['lato','300,400'],['SourceCodePro','Regular']]);
-    art('#333','#ddd');
-    favicon('aio');
-    get_styles(['bootstrap-grid','inputs','micro','docs']);
-    is_mobile() ? get_style('fluid') : '';
-    ?>
-</head>
-<body <?php body_class(); ?>>
+<?php
+$styles = 'bootstrap-grid,micro,docs';
+$styles = is_mobile() ? $styles.',fluid' : $styles;
+$c = new CONTENT();
+$c->pre_html('','','','inputs,modal,table,alerts',$styles,'jquery',['Poppins','300,400,500'],['ChivoMono','300,400']);
+?>
 <header>
     <?php echo is_mobile() ? '<div id="menu" data-on="#menu,#doc_menu"></div>' : ''; ?>
     <div><a href="<?php echo APPURL; ?>" id="brand"></a></div>
@@ -28,9 +16,7 @@
         <div class="icon dark"></div>
     </div>
 </header>
-<aside>
-    <?php get_comp('nav'); ?>
-</aside>
+<?php get_comp('nav'); ?>
 <div class="loader on"><i></i></div>
 <div id="port">
     <div class="dynamic">

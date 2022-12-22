@@ -26,7 +26,7 @@ root / <small><?php E('AIO, Domain Root'); ?></small>
 </pre>
     </div>
 
-    <p><?php E('1. You need to create a directory inside'); ?> <span class="define">COREPATH</span>/apps/ <?php E('with the same name as your domain / sub domain'); ?></p>
+    <p><?php E('1. You need to create a directory inside'); ?> <span class="define">ROOTPATH</span>/apps/ <?php E('with the same name as your domain / sub domain'); ?></p>
     <p class="ml20"><?php E('Ex: instafood.com app dir should be "instafood", crm.instafood.com app dir should be "crm"'); ?></p>
     <p class="ml20"><?php E('AIO will serve you multiple web apps based on the domain you are visiting from'); ?></p>
     <p><?php E('2. Create a directory named "assets"'); ?></p>
@@ -84,7 +84,7 @@ root / <small><?php E('AIO, Domain Root'); ?></small>
 
     <div class="dn">
         <h1 id="auto" class="mb30">Domain to App (Automatic Detection)</h1>
-        <p>AIO automatically detects your domain or subdomain and looks for app with same name inside <span class="define">COREPATH</span>/apps</p>
+        <p>AIO automatically detects your domain or subdomain and looks for app with same name inside <span class="define">ROOTPATH</span>/apps</p>
         <p>Refer to following example how you can name your app to be automatically detected</p>
         <img src="<?php echo APPURL.'apps/'.APPNAME.'/assets/images/multi_app2.svg'; ?>" height="250px">
         <p class="mt20">Refer to the following table for few more examples</p>

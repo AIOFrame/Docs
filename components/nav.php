@@ -1,9 +1,10 @@
+<aside>
 <nav id="doc_menu" data-save-scroll>
     <?php
     global $menu;
     foreach( $menu as $m ) {
         $mc = isset( $_GET['a'] ) && $_GET['a'] == $m[0] ? 'class="on"' : '';
-        echo '<ul id="'.strtolower($m[1]).'" '.$mc.'><li><div data-on="#'.strtolower($m[1]).'">'.T($m[1]).'</div><ul>';
+        echo '<ul id="'.strtolower($m[1]).'" '.$mc.'><li><div >'.T($m[1]).'</div><ul>';
         foreach( $m[2] as $sm ) {
             $msc = isset( $_GET['b'] ) && ($_GET['b'] == $sm[0]) && ($_GET['a'] == $m[0]) ? 'class="on"' : '';
             echo '<li><a href="'.APPURL.$m[0].'/'.$sm[0].'" '.$msc.'>'.T($sm[1]).'</a>';
@@ -36,3 +37,4 @@
     }
     ?>
 </nav>
+</aside>

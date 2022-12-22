@@ -7,6 +7,6 @@
         <pre>git clone https://github.com/AIOFrame/AIO.git</pre>
         <div class="copy" data-clipboard-text="git clone https://github.com/AIOFrame/AIO.git">COPY</div>
     </div>
-    <p><?php E('Tip: You can use root in your development as a defined variable'); ?> <span class="define">COREPATH</span></p>
+    <p><?php E('Tip: You can use root in your development as a defined variable'); ?> <span class="define">ROOTPATH</span></p>
 </article>
 <?php get_comp('foot');

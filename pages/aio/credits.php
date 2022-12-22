@@ -1,19 +1,32 @@
 <?php get_comp('head'); ?>
 <article>
-    <h1 class="mb30">Effort</h1>
-    <p>Rome wasn't built in one day, as so AIO wasn't built in a day either. Yet AIO helps you build web apps in one day!</p>
-    <p>AIO has been under coding since couple years from now, in the beginning it was very complicated to even plan its structure but after lot of struggle of re-coding, bug fixing we are at a stable stage.</p>
-    <div class="mb40"></div>
-    <p><strong>The Failure - </strong> The first application built under AIO was for a major airlines, the app was to book meeting rooms. It was almost deployed. Second project was for a construction company to manage their projects and employees and third was for a tailor store to create customizable orders and add products by barcode scanning. Unfortunate that these were not a huge success but it was trial run for AIO. AIO had already been stable from first project but the remaining projects helped AIO cover up a lot of features and improvements.</p>
-    <div class="mb40"></div>
-    <p><strong>The Success - </strong> The fourth application, <a href="https://filetax.me" target="_blank">FileTax</a>. It was successfully deployed at <a href="https://filetax.me" target="_blank">www.filetax.me</a> and being multi-lingual it helped AIO improve its translation system.</p>
-    <p>Each project contributed to AIO in its own way, based on the project's needs AIO kept expanding.</p>
-    <div class="mb80"></div>
-    <h1 class="mb30">Contributors</h1>
-    <p>Lot of people, developers and non developers contributed for the success of AIO. Below are few honorable people who made AIO possible.</p>
-    <div class="mb40"></div>
-    <p><strong>Shaikh Adnan Moinuddin</strong> - First person to had the idea of AIO, has put his best efforts to make AIO stable and developer friendly.</p>
-    <p><strong>Omar Hussein</strong> - Helped in funding AIO over the years without believing in the idea but by believing in the people behind AIO.</p>
-    <p><strong>Hala Koukeh</strong> - Has been part of AIO development for multiple projects, has contributed for a lot of features and constantly debates for better ideas.</p>
+    <div class="mb60">
+        <h1 class="mb30"><?php E('Effort'); ?></h1>
+        <p><?php E("Rome wasn't built in one day, AIO wasn't built in one day either, but AIO helps you build web apps in one day for sure!"); ?></p>
+        <p><?php E("AIO has been under constant development since couple years from now, in the beginning it was very complicated to even plan its structure but after a lot of trial and error, we are at a stable stage."); ?></p>
+    </div>
+    <div class="mb60">
+        <h1 class="mb30"><?php E('The Failures'); ?></h1>
+        <p><?php E('The first application built under AIO was to book meeting rooms for well reputed airliner company. It was almost deployed but the project was scrubbed due to change in management.'); ?></p>
+        <p><?php E('Second project was for a construction company to manage their projects and employees. It failed due to unclear scope and prolonged deliverables'); ?></p>
+        <p><?php E('Third was for a bespoke tailor store with barcode scanning, but due to unclear scope it failed!'); ?></p>
+        <p><?php E('AIO had already been stable from first project but the remaining projects helped AIO cover up a lot of features and improvements.'); ?></p>
+    </div>
+    <div class="mb60">
+        <h1 class="mb30"><?php E('The Success'); ?></h1>
+        <p><?php E('Fourth project went thru deployment, and it was the first application for calculating tax returns in UAE since VAT was implemented!'); ?></p>
+        <p><?php E('Since then there have been many successful deployments and each project contributed in developing AIO in its own way by adding their necessities'); ?></p>
+    </div>
+    <div class="mb60">
+        <h1 class="mb30"><?php E('Contributors'); ?></h1>
+        <p><?php E('Not a lot of people encouraged AIO, most were under the skepticism that there are already many PHP Frameworks available in the industry.'); ?></p>
+        <p><?php E('Yet there was necessity for AIO to be implemented. Directly or indirectly developers and non developers contributed for the success of AIO. Below are few honorable mentions who made AIO possible.'); ?></p>
+        <p><strong><?php E('Shaikh Adnan Moinuddin'); ?></strong></p>
+        <p><?php E('First person to have the idea of AIO, has put his best efforts to make AIO stable and developer friendly.'); ?></p>
+        <p><strong><?php E('Omar Hussein'); ?></strong></p>
+        <p><?php E("Helped in development of AIO without believing in the actual idea but by believing in quick deliverables so he can make money (he didn't)."); ?></p>
+        <p><strong><?php E('Hala Koukeh'); ?></strong></p>
+        <p><?php E("Has contributed to development part of AIO for multiple projects, constantly debated for better ideas."); ?></p>
+    </div>
 </article>
 <?php get_comp('foot');

@@ -1,9 +1,5 @@
-</div>
-</div>
-<?php get_scripts( [ 'jquery', 'clipboard', 'core', 'barba', 'docs' ] ); ?>
-<div id="notify">
-    <div class="close"></div>
-    <div class="message"></div>
-</div>
-</body>
-</html>
+<?php
+$scripts = [ 'jquery', 'clipboard', 'core', 'barba', 'docs' ];
+$c = new CONTENT();
+$c->post_html($scripts,'t c');
+get_scripts(  );
