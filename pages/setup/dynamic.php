@@ -48,8 +48,6 @@
         </tbody>
     </table>
 </article>
-<div id="links">
-    <a href="#dynamic">Dynamic Pages</a>
-    <a href="#dynamic_ex">Example Dynamic Page Routing</a>
-</div>
-<?php get_comp('foot');
+<?php
+quick_links(['dynamic'=>'Dynamic Pages','dynamic_routes'=>'Routing Example']);
+get_comp('foot');

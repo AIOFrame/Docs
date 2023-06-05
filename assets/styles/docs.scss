@@ -281,16 +281,25 @@ table td pre {
   width:250px;
   box-shadow:0 0 30px rgba(0,0,0,.1);
   border-radius:6px;
-  padding:10px 0 10px;
-}
-#links:before {
-  content:'Quick Links';
-  font-weight: normal;
-}
-#links a, #links:before {
-  display: block;
-  padding:6px 20px;
-  font-size: 14px;
+  padding:40px 0 10px;
+  .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  .links {
+    max-height: 60vh;
+    overflow-y: auto;
+    div {
+      display: block;
+      padding:6px 20px;
+      font-size: .9rem;
+      cursor: pointer;
+    }
+  }
 }
 td .copy {
   display: inline-block;

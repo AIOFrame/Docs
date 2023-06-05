@@ -17,11 +17,13 @@ $menu = [
         [ 'database', 'Database' ],
         [ 'multiple', 'Multiple Apps' ],
     ] ],
-    [ 'front', 'Frontend', [
+    [ 'code', 'Code', [
         [ 'intro', 'Introduction' ],
         [ 'reset', 'Reset CSS' ],
         [ 'fonts', 'Fonts' ],
         [ 'micro', 'Micro CSS' ],
+        [ 'form', 'Form' ],
+        [ 'inputs', 'Inputs' ],
         [ 'art', 'Art CSS', [
             [ 'grid', 'Grid' ],
             [ 'inputs', 'Inputs' ],
@@ -31,8 +33,6 @@ $menu = [
             [ 'modals', 'Modals' ],
             [ 'notifications', 'Notifications' ],
         ] ],
-        [ 'core', 'Core JS' ],
-        [ 'icons', 'Icons' ],
         [ 'party', '3rd Party', [
             [ 'ace', 'Ace' ],
             [ 'barba', 'BarbaJS' ],
@@ -90,6 +90,16 @@ $menu = [
         [ 'credits', 'Credits' ],
     ] ]
 ];
+
+function quick_links( array $links = [] ): void {
+    if( !empty( $links ) ) {
+        echo '<div id="links"><div class="title">'.T('Page Contents').'</div><div class="links">';
+        foreach( $links as $link => $title ) {
+            echo '<div data-scroll="#'.$link.'">'.T( $title ).'</div>';
+        }
+        echo '</div></div>';
+    }
+}
 
 function micro_css_table( $array ) {
     foreach( $array as $k => $v ) {
