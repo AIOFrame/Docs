@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin: 70px 0 0 20vw;
   transition: 0.6s;
@@ -70,7 +69,7 @@ aside nav > ul {
 }
 aside nav > ul > li > div {
   padding: 10px;
-  font-size: calc(.8vw + .8vh);
+  font-size: calc(0.8vw + 0.8vh);
   font-weight: lighter;
   margin: 2px 0 6px;
   border-radius: 10px;
@@ -81,7 +80,7 @@ aside nav > ul > li > div {
   position: relative;
 }
 aside nav > ul > li > div:after {
-  content: "";
+  content: "\e5ce";
   font-family: "MaterialIcons", sans-serif;
   position: absolute;
   right: 10px;
@@ -96,7 +95,7 @@ aside nav > ul > li > ul {
   transition: 0.6s;
 }
 aside nav > ul > li > ul > li a {
-  font-size: calc(.6vw + .65vh);
+  font-size: calc(0.6vw + 0.65vh);
   padding: 10px;
   display: block;
   position: relative;
@@ -130,7 +129,7 @@ aside nav > ul > li > ul > li a.on + ul {
   pointer-events: all;
 }
 aside nav > ul.on div:after {
-  content: "";
+  content: "\e5cf";
 }
 aside nav > ul.on > li > ul {
   height: auto;
@@ -181,8 +180,8 @@ article > h1:nth-child(1) {
 
 p, ol li {
   margin-bottom: 15px;
-  font-size: calc(.8vw + .8vh);
-  line-height: calc(1.8vw + 1.8vh);
+  font-size: 1rem;
+  line-height: 1.8rem;
 }
 
 h3 {
@@ -271,7 +270,6 @@ table td pre {
 .code pre {
   margin-bottom: 15px;
   padding: 15px;
-  white-space: pre;
 }
 .code .copy {
   position: absolute;
@@ -298,14 +296,12 @@ table td pre {
   background: #fff;
   width: 250px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
-  padding: 40px 0 10px;
+  border-radius: 8px;
+  padding: 5px 0;
+  opacity: 0.2;
+  transition: 0.6s;
 }
 #links .title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   padding: 10px 20px;
   font-weight: bold;
 }
@@ -318,6 +314,10 @@ table td pre {
   padding: 6px 20px;
   font-size: 0.9rem;
   cursor: pointer;
+}
+
+#links:hover {
+  opacity: 1;
 }
 
 td .copy {
@@ -369,7 +369,7 @@ table.micro td {
 } */
 /* DARK MODE */
 body.d {
-  background: #0a0a0a;
+  background: rgb(10, 10, 10);
   /* table {
     thead tr {
       background:rgb(15,15,15);
@@ -394,7 +394,7 @@ body.d ::-webkit-scrollbar {
   background: none;
 }
 body.d header {
-  background: #1e1e1e;
+  background: rgb(30, 30, 30);
 }
 body.d header .dark {
   background: url("../icons/sun.svg") no-repeat center/30px;
@@ -406,7 +406,7 @@ body.d article {
   color: #ddd;
 }
 body.d aside {
-  background: #141414;
+  background: rgb(20, 20, 20);
 }
 body.d nav a {
   color: #fff;
@@ -422,25 +422,24 @@ body.d aside nav > ul > li > ul > li a:after {
   background: #fff;
 }
 body.d pre {
-  background: #141414;
-  border: 1px solid #232323;
+  background: rgb(20, 20, 20);
+  border: 1px solid rgb(35, 35, 35);
 }
 body.d #links {
-  background: #141414;
+  background: rgb(20, 20, 20);
 }
 body.d .code .copy {
-  background: black;
+  background: rgb(0, 0, 0);
 }
 
 @media only screen and (min-width: 2000px) {
   p, pre, ol li {
     margin-bottom: 15px;
-    font-size: calc(.6vw + .6vh);
+    font-size: calc(0.6vw + 0.6vh);
     line-height: calc(1.3vw + 1.3vh);
   }
-
   aside nav > ul > li > ul > li > a {
-    font-size: calc(.6vw + .6vh);
+    font-size: calc(0.6vw + 0.6vh);
   }
 }
 

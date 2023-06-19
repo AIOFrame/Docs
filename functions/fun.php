@@ -182,9 +182,11 @@ function render_docs( array $docs = [] ): void {
     global $quick_nav;
     global $docs_table;
     foreach( $docs as $doc ) {
-        if( $doc == 'br' || $doc == 'break' ) {
+        if( is_string( $doc ) && str_contains( $doc, '.' ) ) {
+            echo '<div class="'.str_replace('.','',$doc).'"></div>';
+        } else if( $doc == 'br' || $doc == 'break' ) {
             docs_break();
-        } else if( $doc == 'table' ) {
+        } else if( is_string( $doc ) && $doc == 'table' ) {
             if( $docs_table ) {
                 echo '</table>';
                 $docs_table = 0;
@@ -200,8 +202,8 @@ function render_docs( array $docs = [] ): void {
             foreach( $doc[1] as $th ) {
                 echo '<'.$doc[0].'>'.$th.'</'.$doc[0].'>';
             }
-            echo $doc[0] == 'th' ? '</thead>' : '</tbody>';
             echo '</tr>';
+            echo $doc[0] == 'th' ? '</thead>' : '</tbody>';
         } else if( in_array( $doc[0], [ 'h1', 'h2', 'h3', 'h4', 'h5', 'h6' ] ) ) { {
             docs_title( $doc[1], $doc[0] );
             $quick_nav[] = $doc[1];

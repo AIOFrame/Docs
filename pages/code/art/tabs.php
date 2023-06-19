@@ -1,5 +1,6 @@
-<?php get_comp('head'); ?>
-    <article>
-        <h1><?php E('Tabs'); ?></h1>
-    </article>
-<?php get_comp('foot');
+<?php
+get_comp('head');
+render_docs([
+    [ 'h1', 'Tabs' ]
+]);
+get_comp('foot');

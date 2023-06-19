@@ -1,5 +1,6 @@
-<?php get_comp('head'); ?>
-<article>
-
-</article>
-<?php get_comp('foot');
+<?php
+get_comp('head');
+render_docs([
+    [ 'h1', 'AJAX' ]
+]);
+get_comp('foot');

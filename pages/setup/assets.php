@@ -1,37 +1,27 @@
-<?php get_comp('head'); ?>
-<article>
-    <h1 class="mb30"><?php E('Styles & Scripts'); ?></h1>
-    <p><?php E('Create a dir "assets" inside your APP and add "styles" and "scripts" dirs inside it'); ?></p>
-    <p><?php E('Place your .scss, .css files in "styles" dir and .js in "scripts" dir, and use the following functions to load them'); ?></p>
-    <div class="code">
-        <pre>get_style('style');</pre>
-        <div class="copy" data-clipboard-text="get_style();">COPY</div>
-    </div>
-    <p><?php E('To load a script file "form.js" inside your "scripts" directory'); ?></p>
-    <div class="code">
-        <pre>get_script('form');</pre>
-    </div>
-    <p><?php E('AIO auto detects minified CSS and JS files, if present will load minified file instead'); ?></p>
-    <div class="mb60"></div>
-
-    <h1 id="multiple"><?php E('MULTIPLE ASSETS'); ?></h1>
-    <p><?php E('You can also get multiple styles and scripts at once, which loads in same order'); ?></p>
-    <div class="row">
-        <div class="col-6">
-            <div class="code">
-                <pre>get_styles(['tables','style']);</pre>
-                <div class="copy" data-clipboard-text="get_styles([]);">COPY</div>
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="code">
-                <pre>get_scripts(['jquery','scripts']);</pre>
-                <div class="copy" data-clipboard-text="get_scripts([]);">COPY</div>
-            </div>
-        </div>
-    </div>
-    <p class="mb60"><?php E('Note: AIO will remove duplicated styles and scripts'); ?></p>
-    <p><?php E('Tip: Following code will load contacts css if current page is contacts or sub page'); ?></p>
-    <pre class="dib">page_of("contacts") ? get_style('contacts') : "";</pre>
-</article>
-<?php get_comp('foot');
+<?php
+get_comp('head');
+render_docs([
+    [ 'h1', 'Styles & Scripts' ],
+    [ 'p', 'Create a dir "assets" inside your web app and add "styles" and "scripts" dirs inside it' ],
+    [ 'p', 'Place your .scss, .css files in "styles" dir and .js in "scripts" dir, and use the following functions to load them' ],
+    [ 'code', 'get_style();' ],
+    [ 'code', 'get_script();' ],
+    [ 'p', 'To load a stylesheet "design.css" from styles directory and script file "form.js" inside your scripts directory' ],
+    [ 'code', 'get_style(\'design\');' ],
+    [ 'code', 'get_script(\'form\');' ],
+    [ 'p', 'AIO auto detects minified CSS and JS files, if present minified file will be loaded automatically' ],
+    '.pb30',
+    [ 'h2', 'Load Multiple Assets' ],
+    [ 'p', 'You can load multiple styles or scripts in a single line, loaded in requested order' ],
+    [ 'code', 'get_styles(\'design,table_design\');' ],
+    [ 'code', 'get_scripts([\'jquery\',\'scripts\']);' ],
+    [ 'p', 'Note: First parameter can be array of files or string of file titles separates by ,' ],
+    [ 'p', 'Note: AIO will automatically remove duplicated styles and scripts' ],
+    '.pb30',
+    [ 'h2', 'Logical Load by Page' ],
+    [ 'p', 'You can load a specific stylesheet or script in specific page by path' ],
+    [ 'code', 'get_style(\'table_design\',\'students/all\');' ],
+    [ 'p', 'In this above instance, table_design.css is loaded only for url webapp.com/students/all' ],
+]);
+docs_nav();
+get_comp('foot');

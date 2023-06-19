@@ -1,5 +1,4 @@
 <?php get_comp('head'); ?>
-<article>
     <h1 class="mb30">Database</h1>
     <p>Once you provide database hostname, database name, database user and password in config <a href="<?php echo APPURL.'setup/config'; ?>">as instructed here.</a></p>
     <div class="mb15">Now you can call <pre class="dib">global $db</pre> and run your queries using <pre class="dib">$db->query('your query');</pre></div>
@@ -44,5 +43,4 @@ create_tables( $tables );
             </div>
         </div>
     </div>
-</article>
 <?php get_comp('foot');

@@ -1,7 +1,10 @@
-<?php get_comp('head'); ?>
-<article>
-    <h1><?php E('Structure of AIO'); ?></h1>
-    <h3><?php E('Directory Structure'); ?></h3>
+<?php
+get_comp('head');
+render_docs([
+    [ 'h1', 'Structure of AIO' ],
+    [ 'h2', 'Directory Structure' ],
+]);
+?>
     <pre class="lh15">
 root / <small><?php E('AIO, Domain Root'); ?></small>
 ├─ apps
@@ -29,5 +32,4 @@ root / <small><?php E('AIO, Domain Root'); ?></small>
 ├─ index.php
 └─ README.md
 </pre>
-</article>
 <?php get_comp('foot');

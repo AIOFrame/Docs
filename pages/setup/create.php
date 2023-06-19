@@ -1,5 +1,4 @@
 <?php get_comp('head'); ?>
-<article>
 
     <h1 class="mb30"><?php E('Setup Wizard'); ?></h1>
     <p><?php E('The setup wizard will run once you visit your domain, after your have pointed your domain to root of AIO'); ?></p>
@@ -131,5 +130,4 @@ root / <small><?php E('AIO, Domain Root'); ?></small>
         </table>
         <p>Automatic App Directory: Means you can create a folder with that name and domain will automatically browse to your app's pages</p>
     </div>
-</article>
 <?php get_comp('foot');
