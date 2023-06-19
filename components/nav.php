@@ -12,7 +12,8 @@
                     echo '<ul>';
                     foreach( $sm[2] as $ssm ) {
                         $msc = isset( $_GET['c'] ) && ($_GET['c'] == $ssm[0]) && $_GET['b'] == $sm[0] && ($_GET['a'] == $m[0]) ? 'class="on"' : '';
-                        echo '<li><a href="'.APPURL.$m[0].'/'.$sm[0].'/'.$ssm[0].'" '.$msc.'>'.T($ssm[1]).'</a>';
+                        $title = isset( $ssm[1] ) && !empty( $ssm[1] ) ? $ssm[1] : $ssm[0];
+                        echo '<li><a href="'.APPURL.$m[0].'/'.$sm[0].'/'.$ssm[0].'" '.$msc.'>'.T( $title ).'</a>';
                     }
                     echo '</ul>';
                 }

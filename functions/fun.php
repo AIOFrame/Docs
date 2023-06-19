@@ -1,95 +1,5 @@
 <?php
 
-global $menu;
-$menu = [
-    [ 'setup', 'Setup', [
-        [ 'start', 'Get Started' ],
-        [ 'create', 'Create your First App' ],
-        [ 'config', 'Configuration' ],
-        [ 'static', 'Static Pages' ],
-        [ 'dynamic', 'Dynamic Pages' ],
-        [ 'functions', 'Custom Functions' ],
-        [ 'components', 'Components' ],
-        [ 'assets', 'Styles & Scripts' ],
-        [ 'structure', 'Structure of AIO' ],
-        [ 'defines', 'Defines' ],
-        [ 'database', 'Database' ],
-        [ 'multiple', 'Multiple Apps' ],
-    ] ],
-    [ 'code', 'Code', [
-        [ 'intro', 'Introduction' ],
-        [ 'reset', 'Reset CSS' ],
-        [ 'fonts', 'Fonts' ],
-        [ 'micro', 'Micro CSS' ],
-        [ 'form', 'Form' ],
-        [ 'inputs', 'Inputs' ],
-        [ 'art', 'Art CSS', [
-            [ 'grid', 'Grid' ],
-            [ 'inputs', 'Inputs' ],
-            [ 'buttons', 'Buttons' ],
-            [ 'tabs', 'Tabs' ],
-            [ 'blocks', 'Blocks' ],
-            [ 'modals', 'Modals' ],
-            [ 'notifications', 'Notifications' ],
-        ] ],
-        [ 'party', '3rd Party', [
-            [ 'ace', 'Ace' ],
-            [ 'barba', 'BarbaJS' ],
-            [ 'bot', 'BotJS' ],
-            [ 'chart', 'ChartJS' ],
-            [ 'clipboard', 'ClipboardJS' ],
-            [ 'barcode', 'Barcode' ],
-            [ 'maps', 'Google Maps' ],
-            [ 'kinetic', 'Kinetic' ],
-            [ 'fullpage', 'Fullpage' ],
-            [ 'select2', 'Select 2' ],
-            [ 'moment', 'Moment JS' ],
-            [ 'tilt', 'Tilt JS' ],
-        ] ]
-    ] ],
-    [ 'back', 'Backend', [
-        [ 'intro', 'Introduction' ],
-        [ 'ajax', 'Ajax' ],
-        //[ 'alerts', 'Alerts' ],
-        [ 'arrays', 'Arrays' ],
-        //[ 'crypto', 'Crypto' ],
-        //[ 'database', 'Database' ],
-        [ 'elements', 'Elements' ],
-        //[ 'uploader', 'File Uploader' ],
-        //[ 'translations', 'Translations' ],
-        //[ 'options', 'Options' ],
-        //[ 'queries', 'Database Queries' ],
-        //[ 'functions', 'Functions' ],
-        [ 'party', '3rd Party', [
-            [ 'email', 'Email' ],
-            [ 'cache', 'Fast Cache' ],
-            [ 'pay', 'Payment Gateways' ],
-            [ 'sms', 'SMS' ],
-            [ 'spreadsheet', 'Spreadsheet' ],
-        ] ]
-    ] ],
-    [ 'fun', 'Functions', [
-        [ 'db', 'Class DB()' ],
-        [ 'access', 'Class ACCESS()' ],
-        [ 'alerts', 'Class ALERTS()' ],
-        [ 'options', 'Class OPTIONS()' ],
-        [ 'cms', 'Class CMS()' ],
-        [ 'chat', 'Class CHAT()' ],
-        [ 'commerce', 'Class COMMERCE()' ],
-        [ 'region', 'Class REGION()' ],
-        [ 'backup', 'Class BACKUP()' ],
-        [ 'encrypt', 'Encrypt' ],
-        [ 'log', 'Error Log' ],
-        [ 'translations', 'Translations' ],
-        [ 'portal', 'Portal' ],
-        [ 'files', 'Media' ],
-    ] ],
-    [ 'aio', 'Ahead', [
-        [ 'future', 'Future of AIO' ],
-        [ 'credits', 'Credits' ],
-    ] ]
-];
-
 global $quick_nav;
 
 function quick_links( array $links = [] ): void {
@@ -167,13 +77,16 @@ function docs_nav(): void {
     }
 }
 
+function code( string $code = '' ): string {
+    return '<div class="code"><pre>'.prer($code).'</pre><div class="copy" data-clipboard-text="'.strip_tags($code).'">'.T('COPY').'</div></div>';
+}
+
 function docs_code( string $code = '' ): void {
-    ?>
-    <div class="code">
-        <pre><?php echo $code; ?></pre>
-        <div class="copy" data-clipboard-text="<?php echo $code; ?>"><?php E('COPY'); ?></div>
-    </div>
-    <?php
+    echo code( $code );
+}
+
+function button_code( string $class = '', string $text = '' ): array {
+    return [ '<button class="'.$class.'">'.$text.'</button>', code('<button class="'.$class.'">'.$text.'</button>') ];
 }
 
 global $docs_table;
@@ -186,17 +99,18 @@ function render_docs( array $docs = [] ): void {
             echo '<div class="'.str_replace('.','',$doc).'"></div>';
         } else if( $doc == 'br' || $doc == 'break' ) {
             docs_break();
-        } else if( is_string( $doc ) && $doc == 'table' ) {
+        } else if( is_string( $doc ) && ( $doc == 'table' || $doc == 'plain' ) ) {
             if( $docs_table ) {
                 echo '</table>';
                 $docs_table = 0;
             } else {
-                echo '<table class="r5">';
+                $class = $doc == 'plain' ? 'plain' : 'r5';
+                echo '<table class="'.$class.'">';
                 $docs_table = 1;
             }
         } else if( $doc[0] == 'code' ) {
             docs_code( $doc[1] );
-        } else if( ( $doc[0] == 'th' || $doc[0] == 'td' ) && !empty( $doc[1] ) ) {
+        } else if( ( $doc[0] == 'th' || $doc[0] == 'td' || $doc[0] == 'tr' ) && !empty( $doc[1] ) ) {
             echo $doc[0] == 'th' ? '<thead>' : '<tbody>';
             echo '<tr>';
             foreach( $doc[1] as $th ) {

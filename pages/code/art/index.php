@@ -1,7 +1,10 @@
 <?php
 get_comp('head');
-docs_title( 'ART' );
 render_docs([
+    [ 'h1', 'ART' ],
+    [ 'p', 'ART is a set of visual and functional collaboration of improvements, for visual improvement styles are used and for functional improvements scripts are used' ],
+    [ 'p', 'But you can use individual features of art based on the app you are developing, we believe it will make your life easier' ],
+    '.pb30',
     [ 'h2', 'Using ART' ],
     [ 'p', 'Just use a php function art() and add either string or array of art types needed' ],
     [ 'code', 'art(\'buttons,inputs,tabs,steps\');' ],
