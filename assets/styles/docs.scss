@@ -92,7 +92,7 @@ aside {
           overflow: hidden;
           transition:.6s;
           > li {
-            > a {
+            a {
               font-size:calc(.6vw + .65vh);
               padding:10px;
               display: block;
@@ -102,16 +102,29 @@ aside {
               content: '';
               position: absolute;
               left:calc(100% - 35px);
-              top:50%;
-              width: 0;
-              height: 1px;
-              vertical-align: middle;
+              top: calc(50% - 2px);
+              width: 4px;
+              opacity: 0;
+              height: 4px;
               background: #000;
-              display: inline-block;
+              display: block;
               transition:.6s;
+              border-radius: 2px;
             }
             a.on:after {
-              width:20px;
+              opacity: 1;
+            }
+            a + ul {
+              height: 0;
+              overflow: hidden;
+              opacity: 0;
+              pointer-events: none;
+              margin-left: 10px;
+            }
+            a.on + ul {
+              height: auto;
+              opacity: 1;
+              pointer-events: all;
             }
           }
         }
@@ -121,8 +134,10 @@ aside {
       div:after {
         content: '\e5cf';
       }
-      ul {
-        height: auto;
+      > li {
+        > ul {
+          height: auto;
+        }
       }
     }
     a {
@@ -217,14 +232,14 @@ article.on {
 }
 pre {
   border:2px solid #49b9da;
-  border-radius:5px;
+  border-radius: 12px;
   font-size: 1rem;
   background:#c6e9ed;
   word-break: break-word;
   padding:2px 4px;
   font-family: 'ChivoMono', monospace;
 }
-table {
+/* table {
   border-spacing: 0;
   //border:1px solid #ddd;
   border-radius:4px;
@@ -245,33 +260,35 @@ table {
   td:first-child {
     border-left:1px solid #ddd;
   }
-}
+} */
 table td pre {
   padding: 0;
   background:none;
   border:0;
 }
-.code pre {
-  margin-bottom: 15px;
-  padding:15px;
-  white-space: pre;
-}
-.code .copy {
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  padding: 4px 8px;
-  background: rgba(0,0,0,.4);
-  border-radius: 5px;
-  font-size: 12px;
-  color: #fff;
-  letter-spacing: 1px;
-  cursor: pointer;
-  opacity:.5;
-  transition:.6s;
-}
-.code .copy:hover {
-  opacity:1;
+.code {
+  pre {
+    margin-bottom: 15px;
+    padding:15px;
+    white-space: pre;
+  }
+  .copy {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 4px 8px;
+    background: $ui;
+    border-radius: 6px;
+    font-size: .8rem;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    opacity:.5;
+    transition:.6s;
+  }
+  .copy:hover {
+    opacity:1;
+  }
 }
 #links {
   position:fixed;
@@ -320,7 +337,7 @@ table.micro td {
 
 /* Notification */
 
-#notify {
+/* #notify {
   position: fixed;
   width: 800px;
   left: 50%;
@@ -347,7 +364,7 @@ table.micro td {
   bottom: 20px;
   opacity: 1;
   pointer-events: all;
-}
+} */
 
 /* DARK MODE */
 
@@ -394,7 +411,7 @@ body.d {
   .code .copy {
     background:rgb(0,0,0);
   }
-  table {
+  /* table {
     thead tr {
       background:rgb(15,15,15);
     }
@@ -412,7 +429,7 @@ body.d {
     .close {
       background:url('../icons/closew.svg') no-repeat center / contain;
     }
-  }
+  } */
 }
 
 @media only screen and (min-width: 960px) {

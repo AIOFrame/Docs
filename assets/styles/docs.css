@@ -95,7 +95,7 @@ aside nav > ul > li > ul {
   overflow: hidden;
   transition: 0.6s;
 }
-aside nav > ul > li > ul > li > a {
+aside nav > ul > li > ul > li a {
   font-size: calc(.6vw + .65vh);
   padding: 10px;
   display: block;
@@ -105,21 +105,34 @@ aside nav > ul > li > ul > li a:after {
   content: "";
   position: absolute;
   left: calc(100% - 35px);
-  top: 50%;
-  width: 0;
-  height: 1px;
-  vertical-align: middle;
+  top: calc(50% - 2px);
+  width: 4px;
+  opacity: 0;
+  height: 4px;
   background: #000;
-  display: inline-block;
+  display: block;
   transition: 0.6s;
+  border-radius: 2px;
 }
 aside nav > ul > li > ul > li a.on:after {
-  width: 20px;
+  opacity: 1;
+}
+aside nav > ul > li > ul > li a + ul {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  margin-left: 10px;
+}
+aside nav > ul > li > ul > li a.on + ul {
+  height: auto;
+  opacity: 1;
+  pointer-events: all;
 }
 aside nav > ul.on div:after {
   content: "";
 }
-aside nav > ul.on ul {
+aside nav > ul.on > li > ul {
   height: auto;
 }
 aside nav a {
@@ -219,7 +232,7 @@ article.on {
 
 pre {
   border: 2px solid #49b9da;
-  border-radius: 5px;
+  border-radius: 12px;
   font-size: 1rem;
   background: #c6e9ed;
   word-break: break-word;
@@ -227,28 +240,28 @@ pre {
   font-family: "ChivoMono", monospace;
 }
 
-table {
+/* table {
   border-spacing: 0;
-  border-radius: 4px;
-}
-table thead {
-  color: #00A99D;
-}
-table thead td {
-  border-top: 1px solid #ddd;
-}
-table td {
-  padding: 0 10px;
-  border-bottom: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-}
-table td p {
-  margin: 0;
-}
-table td:first-child {
-  border-left: 1px solid #ddd;
-}
-
+  //border:1px solid #ddd;
+  border-radius:4px;
+  thead {
+    color:$ui;
+    td {
+      border-top:1px solid #ddd;
+    }
+  }
+  td {
+    padding:0 10px;
+    border-bottom:1px solid #ddd;
+    border-right:1px solid #ddd;
+    p {
+      margin: 0;
+    }
+  }
+  td:first-child {
+    border-left:1px solid #ddd;
+  }
+} */
 table td pre {
   padding: 0;
   background: none;
@@ -260,22 +273,20 @@ table td pre {
   padding: 15px;
   white-space: pre;
 }
-
 .code .copy {
   position: absolute;
-  top: 6px;
-  right: 6px;
+  top: 8px;
+  right: 8px;
   padding: 4px 8px;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-  font-size: 12px;
+  background: #00A99D;
+  border-radius: 6px;
+  font-size: 0.8rem;
   color: #fff;
   letter-spacing: 1px;
   cursor: pointer;
   opacity: 0.5;
   transition: 0.6s;
 }
-
 .code .copy:hover {
   opacity: 1;
 }
@@ -328,39 +339,56 @@ table.micro td {
 }
 
 /* Notification */
-#notify {
+/* #notify {
   position: fixed;
   width: 800px;
   left: 50%;
-  transform: translate(-50%);
+  transform:translate(-50%);
   padding: 15px 50px 15px 15px;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  border-radius:10px;
+  background:#fff;
+  box-shadow:0 0 25px rgba(0,0,0,.2);
   opacity: 0;
   pointer-events: none;
   bottom: -150%;
-  transition: 0.6s;
+  transition:.6s;
+  .close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 25px;
+    height: 25px;
+    background:url('../icons/close.svg') no-repeat center / contain;
+    cursor: pointer;
+  }
 }
-#notify .close {
-  position: absolute;
-  right: 5px;
-  top: 5px;
-  width: 25px;
-  height: 25px;
-  background: url("../icons/close.svg") no-repeat center/contain;
-  cursor: pointer;
-}
-
 #notify.on {
   bottom: 20px;
   opacity: 1;
   pointer-events: all;
-}
-
+} */
 /* DARK MODE */
 body.d {
   background: #0a0a0a;
+  /* table {
+    thead tr {
+      background:rgb(15,15,15);
+    }
+    tbody {
+      background:rgb(10,10,10);
+    }
+    tr {
+      border-top:1px solid rgb(20,20,20);
+      border-bottom:1px solid rgb(20,20,20);
+    }
+  }
+  #notify {
+    background:rgb(30,30,30);
+    box-shadow:0 0 25px rgba(20,20,20,.2);
+    .close {
+      background:url('../icons/closew.svg') no-repeat center / contain;
+    }
+  } */
 }
 body.d ::-webkit-scrollbar {
   background: none;
@@ -402,23 +430,6 @@ body.d #links {
 }
 body.d .code .copy {
   background: black;
-}
-body.d table thead tr {
-  background: #0f0f0f;
-}
-body.d table tbody {
-  background: #0a0a0a;
-}
-body.d table tr {
-  border-top: 1px solid #141414;
-  border-bottom: 1px solid #141414;
-}
-body.d #notify {
-  background: #1e1e1e;
-  box-shadow: 0 0 25px rgba(20, 20, 20, 0.2);
-}
-body.d #notify .close {
-  background: url("../icons/closew.svg") no-repeat center/contain;
 }
 
 @media only screen and (min-width: 2000px) {

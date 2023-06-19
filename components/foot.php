@@ -1,3 +1,4 @@
+</article></div></div>
 <?php
 $scripts = [ 'jquery', 'clipboard', 'core', 'barba', 'docs' ];
 $c = new CONTENT();

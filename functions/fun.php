@@ -3,7 +3,6 @@
 global $menu;
 $menu = [
     [ 'setup', 'Setup', [
-        [ 'pre', 'Prerequisites' ],
         [ 'start', 'Get Started' ],
         [ 'create', 'Create your First App' ],
         [ 'config', 'Configuration' ],
@@ -91,6 +90,8 @@ $menu = [
     ] ]
 ];
 
+global $quick_nav;
+
 function quick_links( array $links = [] ): void {
     if( !empty( $links ) ) {
         echo '<div id="links"><div class="title">'.T('Page Contents').'</div><div class="links">';
@@ -125,4 +126,94 @@ function main_page_links() {
             //foreach( $sub_menu[3] )
         }
     }
+}
+
+function docs_title( string $title = '', string $type = 'h1' ): void {
+    echo '<'.$type.' aria-label="'.$title.'">'.$title.'</'.$type.'>';
+}
+
+function docs_content( string|array $content = '' ): void {
+    if( is_array( $content ) ) {
+        foreach( $content as $c ) {
+            render_content( $c );
+        }
+    } else {
+        render_content( $content );
+    }
+}
+
+function render_content( $content ): void {
+    global $quick_nav;
+    if( is_array( $content ) ) {
+        $title = $content[0];
+        $con = $content[1];
+        $quick_nav[] = $title;
+    } else {
+        $con = $content;
+    }
+    echo '<p';
+    echo !empty( $title ) ? ' aria-label="'.$title.'"' : '';
+    echo '>'.$con.'</p>';
+}
+
+function docs_nav(): void {
+    global $quick_nav;
+    if( !empty( $quick_nav ) ) {
+        echo '<div id="links"><div class="title">'.T('Page Contents').'</div><div class="links">';
+        foreach( $quick_nav as $n ) {
+            echo !empty( $n ) ? '<div data-scroll="[aria-label=\''.$n.'\']">'.$n.'</div>' : '';
+        }
+        echo '</div></div>';
+    }
+}
+
+function docs_code( string $code = '' ): void {
+    ?>
+    <div class="code">
+        <pre><?php echo $code; ?></pre>
+        <div class="copy" data-clipboard-text="<?php echo $code; ?>"><?php E('COPY'); ?></div>
+    </div>
+    <?php
+}
+
+global $docs_table;
+
+function render_docs( array $docs = [] ): void {
+    global $quick_nav;
+    global $docs_table;
+    foreach( $docs as $doc ) {
+        if( $doc == 'br' || $doc == 'break' ) {
+            docs_break();
+        } else if( $doc == 'table' ) {
+            if( $docs_table ) {
+                echo '</table>';
+                $docs_table = 0;
+            } else {
+                echo '<table class="r5">';
+                $docs_table = 1;
+            }
+        } else if( $doc[0] == 'code' ) {
+            docs_code( $doc[1] );
+        } else if( ( $doc[0] == 'th' || $doc[0] == 'td' ) && !empty( $doc[1] ) ) {
+            echo $doc[0] == 'th' ? '<thead>' : '<tbody>';
+            echo '<tr>';
+            foreach( $doc[1] as $th ) {
+                echo '<'.$doc[0].'>'.$th.'</'.$doc[0].'>';
+            }
+            echo $doc[0] == 'th' ? '</thead>' : '</tbody>';
+            echo '</tr>';
+        } else if( in_array( $doc[0], [ 'h1', 'h2', 'h3', 'h4', 'h5', 'h6' ] ) ) { {
+            docs_title( $doc[1], $doc[0] );
+            $quick_nav[] = $doc[1];
+        }
+        } else {
+            $title = is_array( $doc[1] ) ? $doc[1][0] : '';
+            !empty( $title ) ? $quick_nav[] = $title : '';
+            docs_content( $doc[1], $title ?? '' );
+        }
+    }
+}
+
+function docs_break(): void {
+    echo '<br/>';
 }

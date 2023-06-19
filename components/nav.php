@@ -8,6 +8,14 @@
         foreach( $m[2] as $sm ) {
             $msc = isset( $_GET['b'] ) && ($_GET['b'] == $sm[0]) && ($_GET['a'] == $m[0]) ? 'class="on"' : '';
             echo '<li><a href="'.APPURL.$m[0].'/'.$sm[0].'" '.$msc.'>'.T($sm[1]).'</a>';
+                if( !empty( $sm[2] ) ) {
+                    echo '<ul>';
+                    foreach( $sm[2] as $ssm ) {
+                        $msc = isset( $_GET['c'] ) && ($_GET['c'] == $ssm[0]) && $_GET['b'] == $sm[0] && ($_GET['a'] == $m[0]) ? 'class="on"' : '';
+                        echo '<li><a href="'.APPURL.$m[0].'/'.$sm[0].'/'.$ssm[0].'" '.$msc.'>'.T($ssm[1]).'</a>';
+                    }
+                    echo '</ul>';
+                }
             echo '</li>';
 
             /* if( !file_exists( APPPATH . 'pages/'. $m[0] . '/' . $sm[0] . '.php' ) ) {
