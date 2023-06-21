@@ -8,4 +8,5 @@ render_docs([
     '.pb30',
     [ 'h1', 'The Idea' ],
 ]);
+docs_nav();
 get_comp('foot');

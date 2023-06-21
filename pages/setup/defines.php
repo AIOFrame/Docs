@@ -15,4 +15,5 @@ render_docs([
     [ 'td', [ 'PAGEPATH', 'Current page inside your web app<br>\'deals/product\' for \'www.shop.omega.com/deals/product/45\'<br/>\'deals\' for \'www.shop.omega.com/deals' ] ],
     'table',
 ]);
+docs_nav();
 get_comp('foot');

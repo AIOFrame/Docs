@@ -13,4 +13,5 @@ render_docs([
     [ 'p', 'Note: You do not need to add .php or .html when fetching a component file' ],
     [ 'p', 'Note: If the component file does not exist, no errors will be thrown! AIO just wont load that file' ]
 ]);
+docs_nav();
 get_comp('foot');

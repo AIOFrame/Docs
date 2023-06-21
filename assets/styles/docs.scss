@@ -1,26 +1,26 @@
-$ui: #00A99D;
+$ui: #00a99d;
 body {
   margin: 70px 0 0 20vw;
-  transition:.6s;
+  transition: 0.6s;
 }
 header {
-  background:#fff;
-  box-shadow:0 0 65px rgba(0,0,0,.08);
+  background: #fff;
+  box-shadow: 0 0 65px rgba(0, 0, 0, 0.08);
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
-  width:100%;
-  z-index:100;
-  height:70px;
+  width: 100%;
+  z-index: 100;
+  height: 70px;
   display: flex;
   align-items: center;
-  transition:.6s;
+  transition: 0.6s;
   > div {
-    flex:0 0 20%;
+    flex: 0 0 20%;
   }
   > .search {
-    flex:0 0 60%;
-    max-width:60%;
+    flex: 0 0 60%;
+    max-width: 60%;
   }
   div:nth-child(3) {
     display: flex;
@@ -29,14 +29,14 @@ header {
     > div {
       width: 50px;
       height: 50px;
-      cursor:pointer;
+      cursor: pointer;
     }
   }
   .dark {
-    background:url('../icons/moon.svg') no-repeat center / 30px;
+    background: url("../icons/moon.svg") no-repeat center / 30px;
   }
   .lang {
-    background:url('../icons/lang.svg') no-repeat center / 30px;
+    background: url("../icons/lang.svg") no-repeat center / 30px;
   }
 }
 #brand {
@@ -44,42 +44,42 @@ header {
   width: 150px;
   height: 40px;
   margin: 10px auto;
-  background:url('../images/logob.svg') no-repeat center / 80px;
+  background: url("../images/logob.svg") no-repeat center / 80px;
 }
 aside {
   position: fixed;
-  width:20vw;
+  width: 20vw;
   left: 0;
-  top:60px;
-  height:calc(100vh - 50px);
+  top: 60px;
+  height: calc(100vh - 50px);
   padding: 30px 10px;
-  overflow-y:auto;
-  box-shadow:0 0 20px rgba(0,0,0,.1);
+  overflow-y: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   //background: rgb(0,169,157);
   //background: linear-gradient(145deg, rgba(0,169,157,1) 0%, rgba(2,115,107,1) 100%);
   nav {
     box-sizing: border-box;
-    transition:.6s;
+    transition: 0.6s;
     > ul {
-      border-radius:10px;
-      transition:.6s;
+      border-radius: 10px;
+      transition: 0.6s;
       list-style: none;
       > li {
         > div {
           padding: 10px;
-          font-size:calc(.8vw + .8vh);
+          font-size: calc(0.8vw + 0.8vh);
           font-weight: lighter;
           margin: 2px 0 6px;
           border-radius: 10px;
           text-transform: uppercase;
           letter-spacing: 2px;
-          color:$ui;
-          cursor:pointer;
+          color: $ui;
+          cursor: pointer;
           position: relative;
         }
         > div:after {
-          content: '\e5ce';
-          font-family: 'MaterialIcons', sans-serif;
+          content: "\e5ce";
+          font-family: "MaterialIcons", sans-serif;
           position: absolute;
           right: 10px;
           top: 50%;
@@ -90,25 +90,25 @@ aside {
           list-style: none;
           height: 0;
           overflow: hidden;
-          transition:.6s;
+          transition: 0.6s;
           > li {
             a {
-              font-size:calc(.6vw + .65vh);
-              padding:10px;
+              font-size: calc(0.6vw + 0.65vh);
+              padding: 10px;
               display: block;
               position: relative;
             }
             a:after {
-              content: '';
+              content: "";
               position: absolute;
-              left:calc(100% - 35px);
+              left: calc(100% - 35px);
               top: calc(50% - 2px);
               width: 4px;
               opacity: 0;
               height: 4px;
               background: #000;
               display: block;
-              transition:.6s;
+              transition: 0.6s;
               border-radius: 2px;
             }
             a.on:after {
@@ -132,7 +132,7 @@ aside {
     }
     > ul.on {
       div:after {
-        content: '\e5cf';
+        content: "\e5cf";
       }
       > li {
         > ul {
@@ -146,7 +146,12 @@ aside {
     }
   }
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 15px 0;
 }
 ol {
@@ -156,16 +161,16 @@ ol {
   text-align: center;
   input {
     text-align: center;
-    border-radius:10px;
-    padding:12px 35px;
+    border-radius: 10px;
+    padding: 12px 35px;
     border: 0;
-    background:rgba(0,0,0,.05) url('../icons/search.svg') no-repeat calc(100% - 15px) center / 25px;
-    margin:0 auto;
+    background: rgba(0, 0, 0, 0.05) url("../icons/search.svg") no-repeat calc(100% - 15px) center / 25px;
+    margin: 0 auto;
     font-weight: lighter;
-    box-shadow:none;
+    box-shadow: none;
     font-size: 18px;
     letter-spacing: 1px;
-    max-width:600px;
+    max-width: 600px;
   }
   input::placeholder {
     //color:#ddd;
@@ -175,9 +180,9 @@ ol {
 /* Page Contents */
 
 article {
-  padding:30px 40px;
-  opacity:0;
-  transition:.6s;
+  padding: 30px 40px;
+  opacity: 0;
+  transition: 0.6s;
   > h1 {
     margin-bottom: 30px;
   }
@@ -187,7 +192,8 @@ article {
     letter-spacing: 2px;
   }
 }
-p, ol li {
+p,
+ol li {
   margin-bottom: 15px;
   font-size: 1rem;
   line-height: 1.8rem;
@@ -196,48 +202,48 @@ h3 {
   font-weight: normal;
 }
 .define {
-  color:$ui;
+  color: $ui;
   font-weight: normal;
 }
 .app {
-  color:olivedrab;
+  color: olivedrab;
   font-weight: normal;
 }
 .core {
-  color:#1CB5E0;
+  color: #1cb5e0;
   font-weight: normal;
 }
 article.on {
-  opacity:1;
+  opacity: 1;
 }
 .code {
   position: relative;
 }
 .loader {
   position: fixed;
-  top:50px;
-  height:2px;
+  top: 50px;
+  height: 2px;
   left: 230px;
-  width:calc(100% - 230px);
+  width: calc(100% - 230px);
   i {
-    background:deepskyblue;
-    opacity:.3;
+    background: deepskyblue;
+    opacity: 0.3;
     position: absolute;
     left: 0;
     top: 0;
-    height:2px;
-    width:0;
-    transition:.6s;
+    height: 2px;
+    width: 0;
+    transition: 0.6s;
   }
 }
 pre {
-  border:2px solid #49b9da;
+  border: 2px solid #49b9da;
   border-radius: 12px;
   font-size: 1rem;
-  background:#c6e9ed;
+  background: #c6e9ed;
   white-space: break-spaces;
-  padding:2px 4px;
-  font-family: 'ChivoMono', monospace;
+  padding: 2px 4px;
+  font-family: "ChivoMono", monospace;
 }
 /* table {
   border-spacing: 0;
@@ -269,7 +275,7 @@ pre {
 .code {
   pre {
     margin-bottom: 15px;
-    padding:15px;
+    padding: 15px;
   }
   .copy {
     position: absolute;
@@ -278,28 +284,28 @@ pre {
     padding: 4px 8px;
     background: $ui;
     border-radius: 6px;
-    font-size: .8rem;
+    font-size: 0.8rem;
     color: #fff;
     letter-spacing: 1px;
     cursor: pointer;
-    opacity:.5;
-    transition:.6s;
+    opacity: 0.5;
+    transition: 0.6s;
   }
   .copy:hover {
-    opacity:1;
+    opacity: 1;
   }
 }
 #links {
-  position:fixed;
-  top:100px;
-  right:20px;
-  background:#fff;
-  width:250px;
-  box-shadow:0 0 30px rgba(0,0,0,.1);
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  background: #fff;
+  width: 250px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 5px 0;
-  opacity: .2;
-  transition: .6s;
+  opacity: 0.2;
+  transition: 0.6s;
   .title {
     padding: 10px 20px;
     font-weight: bold;
@@ -309,8 +315,8 @@ pre {
     overflow-y: auto;
     div {
       display: block;
-      padding:6px 20px;
-      font-size: .9rem;
+      padding: 6px 20px;
+      font-size: 0.9rem;
       cursor: pointer;
     }
   }
@@ -322,7 +328,7 @@ td .copy {
   display: inline-block;
   vertical-align: top;
   padding: 4px 8px;
-  background: rgba(0,0,0,.4);
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   font-size: 12px;
   color: #fff;
@@ -332,7 +338,7 @@ td .copy {
   right: 20px;
 }
 table.micro td {
-  width:50%;
+  width: 50%;
 }
 
 /* Notification */
@@ -369,47 +375,47 @@ table.micro td {
 /* DARK MODE */
 
 body.d {
-  background:rgb(10,10,10);
+  background: rgb(10, 10, 10);
   ::-webkit-scrollbar {
-    background:none;
+    background: none;
   }
   header {
-    background:rgb(30,30,30);
+    background: rgb(30, 30, 30);
     .dark {
-      background: url('../icons/sun.svg') no-repeat center / 30px;
+      background: url("../icons/sun.svg") no-repeat center / 30px;
     }
     .lang {
-      background: url('../icons/langw.svg') no-repeat center / 30px;
+      background: url("../icons/langw.svg") no-repeat center / 30px;
     }
   }
   article {
-    color:#ddd;
+    color: #ddd;
   }
   aside {
-    background:rgba(20,20,20);
+    background: rgba(20, 20, 20);
   }
   nav a {
-    color:#fff;
+    color: #fff;
   }
   #brand {
-    background:url('../images/logow.svg') no-repeat center / 80px;
+    background: url("../images/logow.svg") no-repeat center / 80px;
   }
   .search input {
-    color:#fff;
-    background: rgba(0,0,0,.3) url('../icons/searchw.svg') no-repeat calc(100% - 15px) center / 25px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3) url("../icons/searchw.svg") no-repeat calc(100% - 15px) center / 25px;
   }
-  aside nav>ul>li>ul>li a:after {
-    background:#fff;
+  aside nav > ul > li > ul > li a:after {
+    background: #fff;
   }
   pre {
-    background:rgb(20,20,20);
-    border:1px solid rgb(35,35,35);
+    background: rgb(20, 20, 20);
+    border: 1px solid rgb(35, 35, 35);
   }
   #links {
-    background:rgb(20,20,20);
+    background: rgb(20, 20, 20);
   }
   .code .copy {
-    background:rgb(0,0,0);
+    background: rgb(0, 0, 0);
   }
   /* table {
     thead tr {
@@ -433,18 +439,18 @@ body.d {
 }
 
 @media only screen and (min-width: 960px) {
-
 }
 @media only screen and (min-width: 1440px) {
-
 }
 @media only screen and (min-width: 2000px) {
-  p, pre, ol li {
+  p,
+  pre,
+  ol li {
     margin-bottom: 15px;
-    font-size: calc(.6vw + .6vh);
+    font-size: calc(0.6vw + 0.6vh);
     line-height: calc(1.3vw + 1.3vh);
   }
-  aside nav>ul>li>ul>li>a {
-    font-size: calc(.6vw + .6vh);
+  aside nav > ul > li > ul > li > a {
+    font-size: calc(0.6vw + 0.6vh);
   }
 }

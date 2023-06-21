@@ -12,4 +12,5 @@ render_docs([
     [ 'p', 'Instead of making it all to consistent, our reset eradicates the most common overwrites that you use' ],
     [ 'p', 'AIO\'s reset style also gives a basic improved interface to input elements instead of default interface' ],
 ]);
+docs_nav();
 get_comp('foot');
