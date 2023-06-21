@@ -1,0 +1,36 @@
+<?php
+get_comp('head');
+render_docs([
+    [ 'h1', 'Alerts' ],
+    [ 'p', 'ART provides an inbuilt toast alert script with design that supports quick customization of position' ],
+    [ 'code', 'alert(\'Hi this is a quick alert!\')' ],
+    [ 'p', '<button onclick="alert(\'Hi this is a test alert!\')">Alert!</button>' ],
+    '.pb30',
+    [ 'h2', 'Pre-requisites & Use' ],
+    [ 'p', 'All you need is to add \'alerts\' to your php art() function in header' ],
+    [ 'p', 'And add a div with \'data-alerts\' anywhere in body, if not present alert script will auto append!' ],
+    '.pb30',
+    [ 'h2', 'Alert Parameters' ],
+    [ 'p', 'alert() js function takes 4 parameters' ],
+    [ 'p', 'alert( text, duration, type, icon )' ],
+    'table',
+    [ 'th', [ 'Parameter', 'Type', 'Default', 'Description' ] ],
+    [ 'td', [ 'text', 'string', '', 'Message of alert' ] ],
+    [ 'td', [ 'duration', 'int', '6', 'Duration of alert in seconds' ] ],
+    [ 'td', [ 'type', 'string', '', 'Class of the alert' ] ],
+    [ 'td', [ 'icon', 'string', '', 'Icon class if you want to style the alert' ] ],
+    'table',
+    '.pb30',
+    [ 'h2', 'Alerts Position' ],
+    [ 'p', 'You can position your alerts by adding two letter class to the \'data-alerts\' div' ],
+    'plain',
+    [ 'td', [ 't l', 'top left', code('<div data-alerts class="t l"></div>') ] ],
+    [ 'td', [ 't c', 'top center', code('<div data-alerts class="t c"></div>') ] ],
+    [ 'td', [ 't r', 'top right', code('<div data-alerts class="t r"></div>') ] ],
+    [ 'td', [ 'b l', 'bottom left', code('<div data-alerts class="b l"></div>') ] ],
+    [ 'td', [ 'b c', 'bottom center', code('<div data-alerts class="b c"></div>') ] ],
+    [ 'td', [ 'b r', 'bottom right', code('<div data-alerts class="b r"></div>') ] ],
+    'plain',
+]);
+docs_nav();
+get_comp('foot');
