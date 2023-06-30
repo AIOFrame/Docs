@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 70px 0 0 20vw;
   transition: 0.6s;
@@ -80,7 +81,7 @@ aside nav > ul > li > div {
   position: relative;
 }
 aside nav > ul > li > div:after {
-  content: "\e5ce";
+  content: "";
   font-family: "MaterialIcons", sans-serif;
   position: absolute;
   right: 10px;
@@ -129,7 +130,7 @@ aside nav > ul > li > ul > li a.on + ul {
   pointer-events: all;
 }
 aside nav > ul.on div:after {
-  content: "\e5cf";
+  content: "";
 }
 aside nav > ul.on > li > ul {
   height: auto;
@@ -374,7 +375,7 @@ table.micro td {
 } */
 /* DARK MODE */
 body.d {
-  background: rgb(10, 10, 10);
+  background: #0a0a0a;
   /* table {
     thead tr {
       background:rgb(15,15,15);
@@ -399,7 +400,7 @@ body.d ::-webkit-scrollbar {
   background: none;
 }
 body.d header {
-  background: rgb(30, 30, 30);
+  background: #1e1e1e;
 }
 body.d header .dark {
   background: url("../icons/sun.svg") no-repeat center/30px;
@@ -411,7 +412,7 @@ body.d article {
   color: #ddd;
 }
 body.d aside {
-  background: rgb(20, 20, 20);
+  background: #141414;
 }
 body.d nav a {
   color: #fff;
@@ -427,25 +428,28 @@ body.d aside nav > ul > li > ul > li a:after {
   background: #fff;
 }
 body.d pre {
-  background: rgb(20, 20, 20);
-  border: 1px solid rgb(35, 35, 35);
+  background: #141414;
+  border: 1px solid #232323;
 }
 body.d #links {
-  background: rgb(20, 20, 20);
+  background: #141414;
 }
 body.d .code .copy {
-  background: rgb(0, 0, 0);
+  background: black;
 }
 
 @media only screen and (min-width: 2000px) {
   p,
-  pre,
-  ol li {
+pre,
+ol li {
     margin-bottom: 15px;
     font-size: calc(0.6vw + 0.6vh);
     line-height: calc(1.3vw + 1.3vh);
   }
+
   aside nav > ul > li > ul > li > a {
     font-size: calc(0.6vw + 0.6vh);
   }
-}/*# sourceMappingURL=docs.css.map */
+}
+
+/*# sourceMappingURL=docs.css.map */
