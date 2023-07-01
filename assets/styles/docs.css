@@ -243,7 +243,7 @@ pre {
   background: #c6e9ed;
   white-space: break-spaces;
   padding: 2px 4px;
-  font-family: "ChivoMono", monospace;
+  font-family: "OdudoMono", monospace;
 }
 
 /* table {
@@ -275,21 +275,24 @@ pre {
 } */
 .code pre {
   margin-bottom: 15px;
-  padding: 15px;
+  padding: 12px 25px 12px 12px;
 }
 .code .copy {
   position: absolute;
-  top: 8px;
-  right: 8px;
-  padding: 4px 8px;
+  top: 0;
+  right: 0;
+  padding: 4px 6px;
   background: #00a99d;
-  border-radius: 6px;
-  font-size: 0.8rem;
+  border-radius: 0 10px;
   color: #fff;
   letter-spacing: 1px;
   cursor: pointer;
   opacity: 0.5;
   transition: 0.6s;
+}
+.code .copy .mat-ico {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
 }
 .code .copy:hover {
   opacity: 1;
