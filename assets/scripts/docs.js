@@ -29,6 +29,14 @@ $(document).ready(function(){
         $(this).parents('ul').toggleClass('on');
     })
 
+    .on('click','[data-scroll]',function () {
+        let to = $(this).data('scroll');
+        $('[aria-label="'+to+'"]')[0].scrollIntoView({
+            behavior:'smooth',
+            block:'start',
+        });
+    })
+
 });
 
 function active_nav() {

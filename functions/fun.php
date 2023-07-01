@@ -2,16 +2,6 @@
 
 global $quick_nav;
 
-function quick_links( array $links = [] ): void {
-    if( !empty( $links ) ) {
-        echo '<div id="links"><div class="title">'.T('Page Contents').'</div><div class="links">';
-        foreach( $links as $link => $title ) {
-            echo '<div data-scroll="#'.$link.'">'.T( $title ).'</div>';
-        }
-        echo '</div></div>';
-    }
-}
-
 function micro_css_table( $array ) {
     foreach( $array as $k => $v ) {
         echo '<tr>
@@ -69,9 +59,9 @@ function render_content( $content ): void {
 function docs_nav(): void {
     global $quick_nav;
     if( !empty( $quick_nav ) ) {
-        echo '<div id="links"><div class="title">'.T('Page Contents').'</div><div class="links">';
+        echo '<div id="links"><div class="action" data-toggle-on="#links"><div class="mat-ico open">open_in_full</div><div class="mat-ico close">close_fullscreen</div></div><div class="title">'.T('Page Contents').'</div><div class="links">';
         foreach( $quick_nav as $n ) {
-            echo !empty( $n ) ? '<div data-scroll="[aria-label=\''.$n.'\']">'.$n.'</div>' : '';
+            echo !empty( $n ) ? '<div data-scroll="'.$n.'">'.$n.'</div>' : '';
         }
         echo '</div></div>';
     }
