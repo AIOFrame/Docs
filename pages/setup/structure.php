@@ -1,11 +1,11 @@
 <?php
 get_comp('head');
 render_docs([
-    [ 'h1', 'Structure of AIO' ],
-    [ 'h2', 'Directory Structure' ],
+    [ 'h2', 'AIO Directory Structure' ],
+    [ 'p', _render_image( ASSETURI . 'images/structure.svg', 'AIO Directory Structure', 'artwork', 'img' ) ],
 ]);
 ?>
-    <pre class="lh15">
+    <pre class="lh15 dn">
 root / <small><?php E('AIO, Domain Root'); ?></small>
 ├─ apps
 │  <span class="app">├─ instafood</span> <small><?php E('Your App Root'); ?></small>

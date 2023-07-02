@@ -262,6 +262,10 @@ pre {
   padding: 5px 10px;
 }
 
+.artwork {
+  max-width: 100%;
+}
+
 td div.code pre, th div.code pre {
   margin-bottom: 0;
 }

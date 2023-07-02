@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="903" height="234" viewBox="0 0 903 234">
+  <defs>
+    <linearGradient id="linear-gradient" x2="1" y2="0.984" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d8f3ff"/>
+      <stop offset="1" stop-color="#b5e0f4"/>
+    </linearGradient>
+    <clipPath id="clip-app">
+      <rect width="903" height="234"/>
+    </clipPath>
+  </defs>
+  <g id="app" clip-path="url(#clip-app)">
+    <rect width="903" height="234" fill="#fff"/>
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(2 1)" fill="none" stroke="#00a99d" stroke-width="4" stroke-dasharray="10 10">
+      <rect width="900" height="232" rx="35" stroke="none"/>
+      <rect x="2" y="2" width="896" height="228" rx="33" fill="none"/>
+    </g>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="354" height="67" rx="15" transform="translate(76 135)" fill="url(#linear-gradient)"/>
+    <text id="AIO_Root" data-name="AIO Root" transform="translate(36 61)" font-size="30" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">AIO Root</tspan></text>
+    <g id="Component_1_6" data-name="Component 1 – 6" transform="translate(36 82)">
+      <text id="apps" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">apps</tspan></text>
+      <text id="folder" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+    </g>
+    <g id="Component_1_7" data-name="Component 1 – 7" transform="translate(99 152)">
+      <text id="walletsy" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">walletsy</tspan></text>
+      <text id="folder-2" data-name="folder" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+    </g>
+    <g id="Component_2_2" data-name="Component 2 – 2" transform="translate(268 34)">
+      <text id="Point_your_domains_to_root" data-name="Point your domains to root" transform="translate(42 23)" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Point your domains to root</tspan></text>
+      <text id="keyboard_backspace" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">keyboard_backspace</tspan></text>
+    </g>
+    <g id="Component_2_3" data-name="Component 2 – 3" transform="translate(268 82)">
+      <text id="Create_domain_named_folders_inside_apps_excluding_tld." data-name="Create domain named folders inside apps excluding tld." transform="translate(42 6)" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="17">Create domain named folders inside apps excluding tld.</tspan></text>
+      <text id="keyboard_backspace-2" data-name="keyboard_backspace" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">keyboard_backspace</tspan></text>
+    </g>
+    <text id="walletsy.com_or_walletsy.enterprise.net" data-name="walletsy.com or walletsy.enterprise.net" transform="translate(488 147)" fill="#bf6e00" font-size="16" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="17">walletsy.com or walletsy.enterprise.net</tspan></text>
+    <text id="any_domain_or_sub-domain_auto_loads_this_app" data-name="any domain or sub-domain auto loads this app" transform="translate(488 172)" fill="#bf6e00" font-size="13" font-family="Poppins-Regular, Poppins"><tspan x="0" y="14">any domain or sub-domain auto loads this app</tspan></text>
+    <text id="info" transform="translate(447 186)" fill="#bf6e00" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">info</tspan></text>
+  </g>
+</svg>

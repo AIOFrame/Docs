@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="905" height="1028" viewBox="0 0 905 1028">
+  <defs>
+    <linearGradient id="linear-gradient" x2="1" y2="0.984" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d8f3ff"/>
+      <stop offset="1" stop-color="#b5e0f4"/>
+    </linearGradient>
+    <clipPath id="clip-AIO_Structure">
+      <rect width="905" height="1028"/>
+    </clipPath>
+  </defs>
+  <g id="AIO_Structure" data-name="AIO Structure" clip-path="url(#clip-AIO_Structure)">
+    <rect width="905" height="1028" fill="#fff"/>
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(2 2)" fill="none" stroke="#00a99d" stroke-width="4" stroke-dasharray="10 10">
+      <rect width="900" height="1023" rx="35" stroke="none"/>
+      <rect x="2" y="2" width="896" height="1019" rx="33" fill="none"/>
+    </g>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="354" height="586" rx="15" transform="translate(76 305)" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle_4" data-name="Rectangle 4" width="354" height="67" rx="15" transform="translate(76 921)" fill="url(#linear-gradient)"/>
+    <text id="AIO_Root" data-name="AIO Root" transform="translate(36 62)" font-size="30" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">AIO Root</tspan></text>
+    <g id="Component_1_2" data-name="Component 1 – 2" transform="translate(36 93)">
+      <text id="assets" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">assets</tspan></text>
+      <text id="folder" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+    </g>
+    <g id="Component_1_6" data-name="Component 1 – 6" transform="translate(36 252)">
+      <text id="apps" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">apps</tspan></text>
+      <text id="folder-2" data-name="folder" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+    </g>
+    <g id="Component_1_7" data-name="Component 1 – 7" transform="translate(99 322)">
+      <text id="walletsy" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">walletsy</tspan></text>
+      <text id="folder-3" data-name="folder" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+    </g>
+    <g id="Component_1_21" data-name="Component 1 – 21" transform="translate(99 938)">
+      <text id="instagrocery" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">instagrocery</tspan></text>
+      <text id="folder-4" data-name="folder" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+    </g>
+    <g id="Component_1_8" data-name="Component 1 – 8" transform="translate(139 537)">
+      <text id="pages" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">pages</tspan></text>
+      <text id="folder-5" data-name="folder" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+    </g>
+    <g id="Component_1_12" data-name="Component 1 – 12" transform="translate(139 365)">
+      <text id="assets-2" data-name="assets" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">assets</tspan></text>
+      <text id="folder-6" data-name="folder" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+    </g>
+    <g id="Component_1_13" data-name="Component 1 – 13" transform="translate(179 408)">
+      <text id="styles" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">styles</tspan></text>
+      <text id="folder-7" data-name="folder" transform="translate(0 32)" fill="#007fff" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+      <text id="css" transform="translate(16 21)" fill="#fff" font-size="11" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="-9.465" y="0">css</tspan></text>
+    </g>
+    <g id="Component_1_14" data-name="Component 1 – 14" transform="translate(179 451)">
+      <text id="scripts" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">scripts</tspan></text>
+      <text id="folder-8" data-name="folder" transform="translate(0 32)" fill="#cb7f27" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+      <text id="js" transform="translate(17 21)" fill="#fff" font-size="11" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="-4.686" y="0">js</tspan></text>
+    </g>
+    <g id="Component_1_15" data-name="Component 1 – 15" transform="translate(179 494)">
+      <text id="fonts" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">fonts</tspan></text>
+      <text id="folder-9" data-name="folder" transform="translate(0 32)" fill="#7f58ff" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+      <text id="Aa" transform="translate(17 21)" fill="#fff" font-size="11" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="-7.788" y="0">Aa</tspan></text>
+    </g>
+    <g id="Component_1_9" data-name="Component 1 – 9" transform="translate(139 666)">
+      <text id="components" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">components</tspan></text>
+      <text id="folder-10" data-name="folder" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+    </g>
+    <g id="Component_1_17" data-name="Component 1 – 17" transform="translate(139 795)">
+      <text id="functions" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">functions</tspan></text>
+      <text id="folder-11" data-name="folder" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+    </g>
+    <g id="Component_1_3" data-name="Component 1 – 3" transform="translate(36 146)">
+      <text id="core" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">core</tspan></text>
+      <text id="folder-12" data-name="folder" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+    </g>
+    <g id="Component_1_4" data-name="Component 1 – 4" transform="translate(36 199)">
+      <text id="index.php" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">index.php</tspan></text>
+      <text id="description" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">description</tspan></text>
+    </g>
+    <g id="Component_1_10" data-name="Component 1 – 10" transform="translate(174 580)">
+      <text id="index.php-2" data-name="index.php" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">index.php</tspan></text>
+      <text id="description-2" data-name="description" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">description</tspan></text>
+    </g>
+    <g id="Component_1_20" data-name="Component 1 – 20" transform="translate(139 838)">
+      <text id="config.php" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">config.php</tspan></text>
+      <text id="settings" transform="translate(0 32)" fill="#0a880e" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">settings</tspan></text>
+    </g>
+    <g id="Component_1_11" data-name="Component 1 – 11" transform="translate(174 623)">
+      <text id="transactions.php" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">transactions.php</tspan></text>
+      <text id="description-3" data-name="description" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">description</tspan></text>
+    </g>
+    <g id="Component_1_18" data-name="Component 1 – 18" transform="translate(174 709)">
+      <text id="header.php" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">header.php</tspan></text>
+      <text id="description-4" data-name="description" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">description</tspan></text>
+    </g>
+    <g id="Component_1_19" data-name="Component 1 – 19" transform="translate(174 752)">
+      <text id="footer.php" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">footer.php</tspan></text>
+      <text id="description-5" data-name="description" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">description</tspan></text>
+    </g>
+    <g id="Component_2_2" data-name="Component 2 – 2" transform="translate(268 35)">
+      <text id="Point_your_domains_to_root" data-name="Point your domains to root" transform="translate(42 23)" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Point your domains to root</tspan></text>
+      <text id="keyboard_backspace" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">keyboard_backspace</tspan></text>
+    </g>
+    <g id="Component_2_3" data-name="Component 2 – 3" transform="translate(268 252)">
+      <text id="Create_domain_named_folders_inside_apps_excl._tld." data-name="Create domain named folders inside apps excl. tld." transform="translate(42 23)" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Create domain named folders inside apps excl. tld.</tspan></text>
+      <text id="keyboard_backspace-2" data-name="keyboard_backspace" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">keyboard_backspace</tspan></text>
+    </g>
+    <g id="Component_2_4" data-name="Component 2 – 4" transform="translate(447 365)">
+      <text id="Place_assets_in_relative_folders" data-name="Place assets in relative folders" transform="translate(42 23)" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Place assets in relative folders</tspan></text>
+      <text id="keyboard_backspace-3" data-name="keyboard_backspace" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">keyboard_backspace</tspan></text>
+    </g>
+    <g id="Component_2_5" data-name="Component 2 – 5" transform="translate(447 537)">
+      <text id="Create_your_pages_here_and_start_browsing" data-name="Create your pages here and start browsing" transform="translate(42 23)" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Create your pages here and start browsing</tspan></text>
+      <text id="keyboard_backspace-4" data-name="keyboard_backspace" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">keyboard_backspace</tspan></text>
+    </g>
+    <g id="Component_2_6" data-name="Component 2 – 6" transform="translate(447 666)">
+      <text id="Create_re-usable_components_and_use_anywhere" data-name="Create re-usable components and use anywhere" transform="translate(42 4)" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="17">Create re-usable components and use </tspan><tspan x="0" y="42">anywhere</tspan></text>
+      <text id="keyboard_backspace-5" data-name="keyboard_backspace" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">keyboard_backspace</tspan></text>
+    </g>
+    <g id="Component_2_7" data-name="Component 2 – 7" transform="translate(447 792)">
+      <text id="Write_your_functions_here" data-name="Write your functions here" transform="translate(42 4)" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="17">Write your functions here</tspan></text>
+      <text id="keyboard_backspace-6" data-name="keyboard_backspace" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">keyboard_backspace</tspan></text>
+    </g>
+    <g id="Component_2_8" data-name="Component 2 – 8" transform="translate(447 838)">
+      <text id="Your_app_config_file_define_app_name_configure_connection_to_db_etc." data-name="Your app config file, define app name, configure connection to db etc." transform="translate(42 4)" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="17">Your app config file, define app name, </tspan><tspan x="0" y="42">configure connection to db etc.</tspan></text>
+      <text id="keyboard_backspace-7" data-name="keyboard_backspace" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">keyboard_backspace</tspan></text>
+    </g>
+    <text id="walletsy.com_or_walletsy.enterprise.net" data-name="walletsy.com or walletsy.enterprise.net" transform="translate(488 307)" fill="#bf6e00" font-size="16" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="17">walletsy.com or walletsy.enterprise.net</tspan></text>
+    <text id="instagrocery.tld" transform="translate(488 933)" fill="#bf6e00" font-size="16" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="17">instagrocery.tld</tspan></text>
+    <text id="walletsy.com_transactions" data-name="walletsy.com/transactions" transform="translate(488 576)" fill="#bf6e00" font-size="16" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="17">walletsy.com/transactions</tspan></text>
+    <text id="any_domain_or_sub-domain_auto_loads_this_app" data-name="any domain or sub-domain auto loads this app" transform="translate(488 332)" fill="#bf6e00" font-size="13" font-family="Poppins-Regular, Poppins"><tspan x="0" y="14">any domain or sub-domain auto loads this app</tspan></text>
+    <text id="create_unlimited_apps_and_single_AIO_will_server_them_all" data-name="create unlimited apps and single AIO will server them all" transform="translate(488 958)" fill="#bf6e00" font-size="13" font-family="Poppins-Regular, Poppins"><tspan x="0" y="14">create unlimited apps and single AIO will server them all</tspan></text>
+    <text id="pages_are_auto_routed_simple_visit_domain_page_excl._.php" data-name="pages are auto routed, simple visit domain / page excl. .php" transform="translate(488 601)" fill="#bf6e00" font-size="13" font-family="Poppins-Regular, Poppins"><tspan x="0" y="14">pages are auto routed, simple visit domain / page excl. .php</tspan></text>
+    <text id="info" transform="translate(447 346)" fill="#bf6e00" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">info</tspan></text>
+    <text id="info-2" data-name="info" transform="translate(447 972)" fill="#bf6e00" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">info</tspan></text>
+    <text id="info-3" data-name="info" transform="translate(447 615)" fill="#bf6e00" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">info</tspan></text>
+  </g>
+</svg>

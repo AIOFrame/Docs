@@ -4,6 +4,7 @@ global $menu;
 $menu = [
     [ 'setup', 'Setup', [
         [ 'start', 'Get Started' ],
+        [ 'structure', 'Structure of AIO' ],
         [ 'create', 'Create your First App' ],
         [ 'config', 'Configuration' ],
         [ 'static', 'Static Pages' ],
@@ -11,7 +12,6 @@ $menu = [
         [ 'functions', 'Custom Functions' ],
         [ 'components', 'Components' ],
         [ 'assets', 'Styles & Scripts' ],
-        [ 'structure', 'Structure of AIO' ],
         [ 'defines', 'Defines' ],
         [ 'database', 'Database' ],
         [ 'multiple', 'Multiple Apps' ],

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="903" height="381" viewBox="0 0 903 381">
+  <defs>
+    <linearGradient id="linear-gradient" x2="1" y2="0.984" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d8f3ff"/>
+      <stop offset="1" stop-color="#b5e0f4"/>
+    </linearGradient>
+    <clipPath id="clip-functions">
+      <rect width="903" height="381"/>
+    </clipPath>
+  </defs>
+  <g id="functions" clip-path="url(#clip-functions)">
+    <rect width="903" height="381" fill="#fff"/>
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(2 2)" fill="none" stroke="#00a99d" stroke-width="4" stroke-dasharray="10 10">
+      <rect width="900" height="377" rx="35" stroke="none"/>
+      <rect x="2" y="2" width="896" height="373" rx="33" fill="none"/>
+    </g>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="354" height="203" rx="15" transform="translate(76 136)" fill="url(#linear-gradient)"/>
+    <text id="AIO_Root" data-name="AIO Root" transform="translate(36 62)" font-size="30" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">AIO Root</tspan></text>
+    <g id="Component_1_59" data-name="Component 1 – 59" transform="translate(36 83)">
+      <text id="apps" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">apps</tspan></text>
+      <text id="folder" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+    </g>
+    <g id="Component_1_60" data-name="Component 1 – 60" transform="translate(99 153)">
+      <text id="walletsy" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">walletsy</tspan></text>
+      <text id="folder-2" data-name="folder" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+    </g>
+    <g id="Component_1_61" data-name="Component 1 – 61" transform="translate(139 196)">
+      <text id="functions-2" data-name="functions" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">functions</tspan></text>
+      <text id="folder-3" data-name="folder" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+    </g>
+    <g id="Component_1_68" data-name="Component 1 – 68" transform="translate(174 239)">
+      <text id="users.php" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">users.php</tspan></text>
+      <text id="description" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">description</tspan></text>
+    </g>
+    <g id="Component_1_70" data-name="Component 1 – 70" transform="translate(174 282)">
+      <text id="transactions.php" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">transactions.php</tspan></text>
+      <text id="description-2" data-name="description" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">description</tspan></text>
+    </g>
+    <g id="Component_2_28" data-name="Component 2 – 28" transform="translate(447 196)">
+      <text id="Write_your_functions_here" data-name="Write your functions here" transform="translate(42 4)" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="17">Write your functions here</tspan></text>
+      <text id="keyboard_backspace" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">keyboard_backspace</tspan></text>
+    </g>
+    <text id="functions_are_loaded_before_loading_page_" data-name="functions are loaded before loading page!" transform="translate(488 259)" fill="#bf6e00" font-size="16" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="17">functions are loaded before loading page!</tspan></text>
+    <text id="info" transform="translate(447 286)" fill="#bf6e00" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">info</tspan></text>
+  </g>
+</svg>
