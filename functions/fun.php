@@ -32,17 +32,17 @@ function docs_title( string $title = '', string $type = 'h1' ): void {
     echo '<'.$type.' aria-label="'.$title.'">'.$title.'</'.$type.'>';
 }
 
-function docs_content( string|array $content = '' ): void {
+function docs_content( string|array $content = '', string $element = '', string $class = '' ): void {
     if( is_array( $content ) ) {
         foreach( $content as $c ) {
-            render_content( $c );
+            render_content( $c, $element, $class );
         }
     } else {
-        render_content( $content );
+        render_content( $content, $element, $class );
     }
 }
 
-function render_content( $content ): void {
+function render_content( string|array $content, string $element = 'p', string $class = '' ): void {
     global $quick_nav;
     if( is_array( $content ) ) {
         $title = $content[0];
@@ -51,9 +51,10 @@ function render_content( $content ): void {
     } else {
         $con = $content;
     }
-    echo '<p';
+    $class = !empty( $class ) ? ' class="'.$class.'"' : '';
+    echo '<'.$element.$class;
     echo !empty( $title ) ? ' aria-label="'.$title.'"' : '';
-    echo '>'.$con.'</p>';
+    echo '>'.$con.'</'.$element.'>';
 }
 
 function docs_nav(): void {
@@ -108,14 +109,14 @@ function render_docs( array $docs = [] ): void {
             }
             echo '</tr>';
             echo $doc[0] == 'th' ? '</thead>' : '</tbody>';
-        } else if( in_array( $doc[0], [ 'h1', 'h2', 'h3', 'h4', 'h5', 'h6' ] ) ) { {
+        } else if( in_array( $doc[0], [ 'h1', 'h2', 'h3', 'h4', 'h5', 'h6' ] ) ) {
             docs_title( $doc[1], $doc[0] );
             $quick_nav[] = $doc[1];
-        }
         } else {
+            $s = explode( '.', $doc[0] );
             $title = is_array( $doc[1] ) ? $doc[1][0] : '';
             !empty( $title ) ? $quick_nav[] = $title : '';
-            docs_content( $doc[1], $title ?? '' );
+            docs_content( $doc[1], $s[0], count($s) > 1 ? $s[1] : '' );
         }
     }
 }

@@ -2,7 +2,7 @@
 $styles = 'bootstrap-grid,micro,docs';
 $styles = is_mobile() ? $styles.',fluid' : $styles;
 $c = new CONTENT();
-$c->pre_html('','','','inputs,modal,buttons,table,alerts,icons',$styles,'jquery',['Poppins','300,400,500'],['OdudoMono','300,400'],'MaterialIcons');
+$c->pre_html('','','','inputs,modal,buttons,table,alerts,icons',$styles,'jquery',['Poppins','300,400,500'],['AnonymousPro','400'],'MaterialIcons');
 ?>
 <header>
     <?php echo is_mobile() ? '<div id="menu" data-on="#menu,#doc_menu"></div>' : ''; ?>

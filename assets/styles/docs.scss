@@ -223,7 +223,7 @@ h3 {
 article.on {
   opacity: 1;
 }
-.code {
+div.code {
   position: relative;
 }
 .loader {
@@ -244,13 +244,39 @@ article.on {
   }
 }
 pre {
-  border: 2px solid #49b9da;
-  border-radius: 12px;
+  //border: 2px solid #49b9da;
+  border-radius: 10px;
   font-size: 1rem;
   background: #c6e9ed;
   white-space: break-spaces;
   padding: 2px 4px;
-  font-family: "OdudoMono", monospace;
+  font-family: "AnonymousPro", monospace;
+}
+.pre > pre {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+td, th {
+  div.code pre {
+    margin-bottom: 0;
+  }
+}
+.tip {
+  padding: 12px 12px 12px 60px;
+  background: #ffa50033;
+  border-radius: 15px;
+  position: relative;
+}
+.tip:before {
+  content: 'info';
+  font-family: 'MaterialIcons';
+  position: absolute;
+  left: 15px;
+  font-size: 2rem;
+  color: orange;
 }
 /* table {
   border-spacing: 0;
@@ -279,7 +305,7 @@ pre {
   background:none;
   border:0;
 } */
-.code {
+div.code {
   pre {
     margin-bottom: 15px;
     padding: 12px 25px 12px 12px;
@@ -447,7 +473,7 @@ body.d {
   #links {
     background: rgb(20, 20, 20);
   }
-  .code .copy {
+  div.code .copy {
     background: rgb(0, 0, 0);
   }
   /* table {
