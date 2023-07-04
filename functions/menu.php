@@ -14,7 +14,7 @@ $menu = [
         [ 'assets', 'Styles & Scripts' ],
         [ 'defines', 'Defines' ],
         [ 'database', 'Database' ],
-        [ 'multiple', 'Multiple Apps' ],
+        //[ 'multiple', 'Multiple Apps' ],
     ] ],
     [ 'code', 'Code', [
         [ 'intro', 'Introduction' ],

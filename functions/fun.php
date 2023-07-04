@@ -69,7 +69,7 @@ function docs_nav(): void {
 }
 
 function code( string $code = '' ): string {
-    return '<div class="code"><pre>'.prer($code).'</pre><div class="copy" data-clipboard-text="'.strip_tags($code).'" title="Copy code to clipboard"><div class="mat-ico">content_copy</div></div></div>';
+    return '<div class="code"><pre>'._pre($code).'</pre><div class="copy" data-clipboard-text="'.strip_tags($code).'" title="Copy code to clipboard"><div class="mat-ico">content_copy</div></div></div>';
 }
 
 function docs_code( string $code = '' ): void {
