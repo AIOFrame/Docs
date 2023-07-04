@@ -16,21 +16,21 @@
     </g>
     <rect id="Rectangle_2" data-name="Rectangle 2" width="354" height="119" rx="15" transform="translate(76 136)" fill="url(#linear-gradient)"/>
     <text id="AIO_Root" data-name="AIO Root" transform="translate(36 62)" font-size="30" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">AIO Root</tspan></text>
-    <g id="Component_1_59" data-name="Component 1 – 59" transform="translate(36 83)">
-      <text id="apps" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">apps</tspan></text>
-      <text id="folder" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+    <g id="File_Folder" data-name="File Folder" transform="translate(38.688 86)">
+      <text id="apps" transform="translate(39.313 21)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">apps</tspan></text>
+      <path id="Path_2" data-name="Path 2" d="M14.125-25.875a2.71,2.71,0,0,0-1.875-.812H5.313A2.7,2.7,0,0,0,2.688-24V-8A2.7,2.7,0,0,0,5.313-5.312H26.688A2.7,2.7,0,0,0,29.313-8V-21.312A2.655,2.655,0,0,0,26.688-24H16Z" transform="translate(-2.688 29)"/>
     </g>
-    <g id="Component_1_60" data-name="Component 1 – 60" transform="translate(99 153)">
-      <text id="walletsy" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">walletsy</tspan></text>
-      <text id="folder-2" data-name="folder" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+    <g id="File_Folder-2" data-name="File Folder" transform="translate(101.688 156)">
+      <text id="walletsy" transform="translate(39.313 21)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">walletsy</tspan></text>
+      <path id="Path_2-2" data-name="Path 2" d="M14.125-25.875a2.71,2.71,0,0,0-1.875-.812H5.313A2.7,2.7,0,0,0,2.688-24V-8A2.7,2.7,0,0,0,5.313-5.312H26.688A2.7,2.7,0,0,0,29.313-8V-21.312A2.655,2.655,0,0,0,26.688-24H16Z" transform="translate(-2.688 29)"/>
     </g>
-    <g id="Component_2_28" data-name="Component 2 – 28" transform="translate(447 196)">
-      <text id="Configure_your_web_app_here" data-name="Configure your web app here" transform="translate(42 4)" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="17">Configure your web app here</tspan></text>
-      <text id="keyboard_backspace" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">keyboard_backspace</tspan></text>
+    <g id="Component_2_28" data-name="Component 2 – 28" transform="translate(451.563 200)">
+      <text id="Configure_your_web_app_here" data-name="Configure your web app here" transform="translate(37.438)" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="17">Configure your web app here</tspan></text>
+      <path id="Path_1" data-name="Path 1" d="M26.688-17.312H9.125l3.813-3.875a1.359,1.359,0,0,0,0-1.875,1.359,1.359,0,0,0-1.875,0L4.938-16.937a1.359,1.359,0,0,0,0,1.875l6.125,6.125a1.359,1.359,0,0,0,1.875,0,1.359,1.359,0,0,0,0-1.875L9.125-14.687H26.688A1.32,1.32,0,0,0,28-16,1.32,1.32,0,0,0,26.688-17.312Z" transform="translate(-4.563 28)"/>
     </g>
-    <g id="Component_1_80" data-name="Component 1 – 80" transform="translate(139 196)">
-      <text id="config.php" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">config.php</tspan></text>
-      <text id="settings" transform="translate(0 32)" fill="#0a880e" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">settings</tspan></text>
+    <g id="File_Folder-3" data-name="File Folder" transform="translate(142.02 198.688)">
+      <text id="config.php" transform="translate(38.98 21.313)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">config.php</tspan></text>
+      <path id="Path_4" data-name="Path 4" d="M26-16a4.73,4.73,0,0,0-.062-.937l2.5-1.875a1.281,1.281,0,0,0,.375-1.687l-2.5-4.312a1.33,1.33,0,0,0-1.687-.562L21.75-24.187a12.581,12.581,0,0,0-1.562-.875l-.375-3.125A1.3,1.3,0,0,0,18.5-29.312h-5a1.3,1.3,0,0,0-1.312,1.125l-.375,3.125a12.581,12.581,0,0,0-1.562.875L7.375-25.375a1.33,1.33,0,0,0-1.687.563L3.188-20.5a1.376,1.376,0,0,0,.375,1.75l2.5,1.875A3.843,3.843,0,0,0,6-16a4.73,4.73,0,0,0,.063.938l-2.5,1.875A1.281,1.281,0,0,0,3.188-11.5l2.5,4.313a1.33,1.33,0,0,0,1.688.563L10.25-7.812a12.581,12.581,0,0,0,1.563.875l.375,3.125A1.3,1.3,0,0,0,13.5-2.687h5a1.343,1.343,0,0,0,1.313-1.125l.375-3.125a12.581,12.581,0,0,0,1.563-.875l2.875,1.188a1.235,1.235,0,0,0,1.625-.562l2.5-4.312a1.265,1.265,0,0,0-.312-1.687l-2.5-1.875A4.73,4.73,0,0,0,26-16Zm-9.937,4.688A4.722,4.722,0,0,1,11.375-16a4.722,4.722,0,0,1,4.688-4.687A4.722,4.722,0,0,1,20.75-16,4.722,4.722,0,0,1,16.063-11.312Z" transform="translate(-3.02 29.313)" fill="#018901"/>
     </g>
   </g>
 </svg>

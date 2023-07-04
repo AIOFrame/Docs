@@ -16,21 +16,21 @@
     </g>
     <rect id="Rectangle_2" data-name="Rectangle 2" width="354" height="67" rx="15" transform="translate(76 135)" fill="url(#linear-gradient)"/>
     <text id="AIO_Root" data-name="AIO Root" transform="translate(36 61)" font-size="30" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">AIO Root</tspan></text>
-    <g id="Component_1_6" data-name="Component 1 – 6" transform="translate(36 82)">
-      <text id="apps" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">apps</tspan></text>
-      <text id="folder" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+    <g id="File_Folder" data-name="File Folder" transform="translate(38.688 85)">
+      <text id="apps" transform="translate(39.313 21)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">apps</tspan></text>
+      <path id="Path_2" data-name="Path 2" d="M14.125-25.875a2.71,2.71,0,0,0-1.875-.812H5.313A2.7,2.7,0,0,0,2.688-24V-8A2.7,2.7,0,0,0,5.313-5.312H26.688A2.7,2.7,0,0,0,29.313-8V-21.312A2.655,2.655,0,0,0,26.688-24H16Z" transform="translate(-2.688 29)"/>
     </g>
-    <g id="Component_1_7" data-name="Component 1 – 7" transform="translate(99 152)">
-      <text id="walletsy" transform="translate(42 24)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">walletsy</tspan></text>
-      <text id="folder-2" data-name="folder" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">folder</tspan></text>
+    <g id="File_Folder-2" data-name="File Folder" transform="translate(101.688 155)">
+      <text id="walletsy" transform="translate(39.313 21)" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">walletsy</tspan></text>
+      <path id="Path_2-2" data-name="Path 2" d="M14.125-25.875a2.71,2.71,0,0,0-1.875-.812H5.313A2.7,2.7,0,0,0,2.688-24V-8A2.7,2.7,0,0,0,5.313-5.312H26.688A2.7,2.7,0,0,0,29.313-8V-21.312A2.655,2.655,0,0,0,26.688-24H16Z" transform="translate(-2.688 29)"/>
     </g>
-    <g id="Component_2_2" data-name="Component 2 – 2" transform="translate(268 34)">
-      <text id="Point_your_domains_to_root" data-name="Point your domains to root" transform="translate(42 23)" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Point your domains to root</tspan></text>
-      <text id="keyboard_backspace" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">keyboard_backspace</tspan></text>
+    <g id="Component_2_2" data-name="Component 2 – 2" transform="translate(272.563 40)">
+      <text id="Point_your_domains_to_root" data-name="Point your domains to root" transform="translate(37.438 17)" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Point your domains to root</tspan></text>
+      <path id="Path_1" data-name="Path 1" d="M26.688-17.312H9.125l3.813-3.875a1.359,1.359,0,0,0,0-1.875,1.359,1.359,0,0,0-1.875,0L4.938-16.937a1.359,1.359,0,0,0,0,1.875l6.125,6.125a1.359,1.359,0,0,0,1.875,0,1.359,1.359,0,0,0,0-1.875L9.125-14.687H26.688A1.32,1.32,0,0,0,28-16,1.32,1.32,0,0,0,26.688-17.312Z" transform="translate(-4.563 26)"/>
     </g>
-    <g id="Component_2_3" data-name="Component 2 – 3" transform="translate(268 82)">
-      <text id="Create_domain_named_folders_inside_apps_excluding_tld." data-name="Create domain named folders inside apps excluding tld." transform="translate(42 6)" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="17">Create domain named folders inside apps excluding tld.</tspan></text>
-      <text id="keyboard_backspace-2" data-name="keyboard_backspace" transform="translate(0 32)" font-size="32" font-family="MaterialIconsRound-Regular, Material Icons Round"><tspan x="0" y="0">keyboard_backspace</tspan></text>
+    <g id="Component_2_3" data-name="Component 2 – 3" transform="translate(272.563 88)">
+      <text id="Create_domain_named_folders_inside_apps_excluding_tld." data-name="Create domain named folders inside apps excluding tld." transform="translate(37.438)" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="17">Create domain named folders inside apps excluding tld.</tspan></text>
+      <path id="Path_1-2" data-name="Path 1" d="M26.688-17.312H9.125l3.813-3.875a1.359,1.359,0,0,0,0-1.875,1.359,1.359,0,0,0-1.875,0L4.938-16.937a1.359,1.359,0,0,0,0,1.875l6.125,6.125a1.359,1.359,0,0,0,1.875,0,1.359,1.359,0,0,0,0-1.875L9.125-14.687H26.688A1.32,1.32,0,0,0,28-16,1.32,1.32,0,0,0,26.688-17.312Z" transform="translate(-4.563 26)"/>
     </g>
     <text id="walletsy.com_or_walletsy.enterprise.net" data-name="walletsy.com or walletsy.enterprise.net" transform="translate(488 147)" fill="#bf6e00" font-size="16" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="17">walletsy.com or walletsy.enterprise.net</tspan></text>
     <text id="any_domain_or_sub-domain_auto_loads_this_app" data-name="any domain or sub-domain auto loads this app" transform="translate(488 172)" fill="#bf6e00" font-size="13" font-family="Poppins-Regular, Poppins"><tspan x="0" y="14">any domain or sub-domain auto loads this app</tspan></text>
