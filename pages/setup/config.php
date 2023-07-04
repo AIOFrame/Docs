@@ -21,13 +21,13 @@ render_docs([
     ['p','Note: Do not change "key" (Encryption Key) once in use!'],
     '.mb60',
     ['h3','Sample config.php'],
-    ['code', "<?php
+    ['code', "
     return [
         'name' => 'Delivery App',
         'ssl' => true,
         'key' => 'Awesome',
         'debug' => false,
-    ]; ?>"],
+    ]; "],
 ]);
 docs_nav();
 get_comp('foot');
