@@ -286,6 +286,16 @@ td div.code pre, th div.code pre {
   color: orange;
 }
 
+table.plain {
+  margin-bottom: 20px;
+}
+table.plain td:first-child {
+  padding: 10px 10px 10px 0;
+}
+table.plain td:last-child {
+  padding: 10px 0 10px 10px;
+}
+
 /* table {
   border-spacing: 0;
   //border:1px solid #ddd;

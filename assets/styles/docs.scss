@@ -281,6 +281,15 @@ td, th {
   font-size: 2rem;
   color: orange;
 }
+table.plain {
+  margin-bottom: 20px;
+  td:first-child {
+    padding: 10px 10px 10px 0;
+  }
+  td:last-child {
+    padding: 10px 0 10px 10px;
+  }
+}
 /* table {
   border-spacing: 0;
   //border:1px solid #ddd;

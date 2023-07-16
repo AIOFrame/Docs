@@ -124,3 +124,29 @@ function render_docs( array $docs = [] ): void {
 function docs_break(): void {
     echo '<br/>';
 }
+
+function docs_functions( string $class = '', array $functions = [] ): array {
+    $d = [];
+    foreach( $functions as $gf ) {
+        $docs = get_comments( $class, $gf );
+        $params = [];
+        $param_data = [];
+        if( !empty( $docs['params'] ) && is_array( $docs['params'] ) ) {
+            foreach( $docs['params'] as $i ) {
+                $params[] = $i['param'];
+                $param_data[] = [ 'td', [ $i['type'], $i['param'], $i['desc'] ] ];
+            }
+        }
+        $d[] = [ 'h2', $docs['fun']. '()' ];
+        $d[] = [ 'p', $docs['desc'] ?? '' ];
+        $d[] = [ 'code', $docs['fun'] . '( '.implode( ', ', $params ) .' );' ];
+        $d[] = 'table';
+        $d[] = [ 'th', [ 'Type', 'Parameter', 'Description' ] ];
+        foreach( $param_data as $pd ){
+            $d[] = $pd;
+        }
+        $d[] = 'table';
+        $d[] = '.pb40';
+    }
+    return $d;
+}
