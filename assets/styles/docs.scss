@@ -247,6 +247,7 @@ pre {
   //border: 2px solid #49b9da;
   border-radius: 10px;
   font-size: 1rem;
+  line-height: 1.4rem;
   background: #c6e9ed;
   white-space: break-spaces;
   padding: 2px 4px;
@@ -281,8 +282,10 @@ td, th {
   font-size: 2rem;
   color: orange;
 }
-table.plain {
+table {
   margin-bottom: 20px;
+}
+table.plain {
   td:first-child {
     padding: 10px 10px 10px 0;
   }

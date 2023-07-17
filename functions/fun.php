@@ -146,6 +146,11 @@ function docs_functions( string $class = '', array $functions = [] ): array {
             $d[] = $pd;
         }
         $d[] = 'table';
+        if( !empty( $docs['tips'] ) ) {
+            foreach( $docs['tips'] as $tip ) {
+                $d[] = [ 'p.tip', $tip ];
+            }
+        }
         $d[] = '.pb40';
     }
     return $d;
