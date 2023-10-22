@@ -1,8 +1,9 @@
 <?php
 get_comp('head');
-$pages = '<div class="pagination red"><button class="page_link">1</button><button class="page_link">...</button><button class="page_link on">5</button><button class="page_link">...</button><button class="page_link">7</button></div>';
-$pages_round = '<div class="pagination blue r"><button class="page_link">1</button><button class="page_link">...</button><button class="page_link on">5</button><button class="page_link">...</button><button class="page_link">7</button></div>';
-$pages_split = '<div class="pagination grey split"><button class="page_link">1</button><button class="page_link">...</button><button class="page_link on">5</button><button class="page_link">...</button><button class="page_link">7</button></div>';
+$pagination_buttons = _b( 'page_link', 1 ) . _b( 'page_link no', '...' ) . _b( 'page_link on', 5 ) . _b( 'page_link no', '...' ). _b( 'page_link', 7 );
+$pages = _div( 'pagination red', $pagination_buttons );
+$pages_round = _div( 'pagination blue r', $pagination_buttons );
+$pages_split = _div( 'pagination grey split', $pagination_buttons );
 render_docs([
     [ 'h1', 'Buttons' ],
     [ 'p', 'Buttons ART give developer quick classes to wide range of buttons varying by color, size and design' ],
@@ -10,9 +11,9 @@ render_docs([
     [ 'h2', 'Simple Button' ],
     [ 'p', 'You can turn almost any element into button by adding "btn" class or simple use button element' ],
     'plain',
-    [ 'td', [ '<button>Click Me</button>', code('<button>Click Me</button>') ] ],
-    [ 'td', [ '<div class="btn">Click Me</div>', code('<div class="btn">Click Me</div>') ] ],
-    [ 'td', [ '<a href="#" class="btn">Click Me</a>', code('<a href="#" class="btn">Click Me</a>') ] ],
+    [ 'td', [ '<button>Click Me</button>', code('<button>Click Me</button>'), code("b('','Click Me');") ] ],
+    [ 'td', [ '<div class="btn">Click Me</div>', code('<div class="btn">Click Me</div>'), code("div('btn','Click Me');") ] ],
+    [ 'td', [ '<a href="#" class="btn">Click Me</a>', code('<a href="#" class="btn">Click Me</a>'), code("a('#','Click Me','btn');") ] ],
     'plain',
     '.pb30',
     [ 'h2', 'Sizing' ],
@@ -69,15 +70,17 @@ render_docs([
     'plain',
     [ 'p', 'You can add color class to parent wrapper with "btn-" prepended and all child buttons will take that color' ],
     [ 'code', '<div class="btn-blue"><button>Add User</button> <button>Edit User</button></div>' ],
+    [ 'code', "div( 'btn-blue', _b('','Add User') . _b('','Edit User') )" ],
     [ 'p', '<div class="btn-blue"><button>Add User</button> <button>Edit User</button></div>' ],
     [ 'p', 'You can try that with size too' ],
     [ 'code', '<div class="btn-xs"><button>Add User</button> <button>Edit User</button></div>' ],
+    [ 'code', "div( 'btn-xs', _b('','Add User') . _b('','Edit User') )" ],
     [ 'p', '<div class="btn-xs"><button>Add User</button> <button>Edit User</button></div>' ],
     '.pb30',
     [ 'h2', 'Animations' ],
     [ 'p', 'You can add class "load" to button and add element span with class "loader" to create loading animation!' ],
     'plain',
-    [ 'td', button_code( 'load', 'Loading... <span class="loader"></span>' ) ],
+    [ 'td', button_code( 'load', 'Loading... <span class="loader"></span>', "Loading... _el('span','loader')" ) ],
     'plain',
     [ 'p', 'You can remove the default hover floating animation by adding class "nf"' ],
     'plain',
@@ -99,10 +102,13 @@ render_docs([
     [ 'h2', 'Pagination' ],
     [ 'p', $pages ],
     [ 'p', code( $pages ) ],
+    [ 'p', code( "div( 'pagination red', _b( 'page_link', 1 ) . _b( 'page_link no', '...' ) . _b( 'page_link on', 5 ) . _b( 'page_link no', '...' ). _b( 'page_link', 7 ) );" ) ],
     [ 'p', $pages_round ],
     [ 'p', code( $pages_round ) ],
+    [ 'p', code( "div( 'pagination blue r', _b( 'page_link', 1 ) . _b( 'page_link no', '...' ) . _b( 'page_link on', 5 ) . _b( 'page_link no', '...' ). _b( 'page_link', 7 ) );" ) ],
     [ 'p', $pages_split ],
     [ 'p', code( $pages_split ) ],
+    [ 'p', code( "div( 'pagination grey split', _b( 'page_link', 1 ) . _b( 'page_link no', '...' ) . _b( 'page_link on', 5 ) . _b( 'page_link no', '...' ). _b( 'page_link', 7 ) );" ) ],
 ]);
 docs_nav();
 get_comp('foot');

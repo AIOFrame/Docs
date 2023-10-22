@@ -69,15 +69,18 @@ function docs_nav(): void {
 }
 
 function code( string $code = '' ): string {
-    return '<div class="code"><pre>'._pre($code).'</pre><div class="copy" data-clipboard-text="'.strip_tags($code).'" title="Copy code to clipboard"><div class="mat-ico">content_copy</div></div></div>';
+    $ico = _div( 'mat-ico', 'content_copy' );
+    $copy = _div( 'copy', $ico, '', 'data-clipboard-text="'.strip_tags($code).'" title="'.T('Copy code to clipboard').'"' );
+    $pre = _el( 'pre', '', htmlentities( $code ) );
+    return _div( 'code', $pre . $copy );
 }
 
 function docs_code( string $code = '' ): void {
     echo code( $code );
 }
 
-function button_code( string $class = '', string $text = '' ): array {
-    return [ '<button class="'.$class.'">'.$text.'</button>', code('<button class="'.$class.'">'.$text.'</button>') ];
+function button_code( string $class = '', string $text = '', string $code = '' ): array {
+    return [ '<button class="'.$class.'">'.$text.'</button>', code('<button class="'.$class.'">'.$text.'</button>'), code("b('$class','".( $code ?? $text )."');") ];
 }
 
 global $docs_table;
