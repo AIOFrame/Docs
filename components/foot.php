@@ -1,6 +1,6 @@
-</article></div></div>
 <?php
+        article_();
+    d_();
+d_();
 $scripts = [ 'jquery', 'basics', 'clipboard', 'core', 'barba', 'docs' ];
-$c = new CONTENT();
-$c->post_html($scripts,'t c');
-get_scripts(  );
+post_html( $scripts, 't c' );

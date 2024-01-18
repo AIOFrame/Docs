@@ -60,16 +60,23 @@ function render_content( string|array $content, string $element = 'p', string $c
 function docs_nav(): void {
     global $quick_nav;
     if( !empty( $quick_nav ) ) {
-        echo '<div id="links"><div class="action" data-toggle-on="#links"><div class="mat-ico open">open_in_full</div><div class="mat-ico close">close_fullscreen</div></div><div class="title">'.T('Page Contents').'</div><div class="links">';
-        foreach( $quick_nav as $n ) {
-            echo !empty( $n ) ? '<div data-scroll="'.$n.'">'.$n.'</div>' : '';
-        }
-        echo '</div></div>';
+        _d( '', 'links' );
+            _d( 'action', '', 'data-toggle-on="#links"' );
+                div( 'mat-ico open', 'open_in_full' );
+                div( 'mat-ico close', 'close_fullscreen' );
+            d_();
+            div( 'title', 'Page Contents', '', '', 1 );
+            _d( 'links' );
+                foreach( $quick_nav as $n ) {
+                    echo !empty( $n ) ? '<div data-scroll="'.$n.'">'.$n.'</div>' : '';
+                }
+            d_();
+        d_();
     }
 }
 
 function code( string $code = '' ): string {
-    return '<div class="code"><pre>'._pre($code).'</pre><div class="copy" data-clipboard-text="'.strip_tags($code).'" title="Copy code to clipboard"><div class="mat-ico">content_copy</div></div></div>';
+    return '<div class="code"><pre>'.$code.'</pre><div class="copy" data-clipboard-text="'.strip_tags($code).'" title="Copy code to clipboard"><div class="mat-ico">content_copy</div></div></div>';
 }
 
 function docs_code( string $code = '' ): void {
